@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<html xmlns='http://www.w3.org/1999/xhtml' lang='en-CA' xml:lang='en-CA'>
+    <head>
+        <title>‘intracast’</title>
+        </head>
+    <body>
+        <!-- <<< deindent -->
+
+<section      id='intracast'>
+    <h2><a href='#intracast'>
+                  intracast</a></h2>
+    <ul>
+        <li>
+            (adjective) located or occuring within a
+            <a href='http://reluk.ca/project/wayic/cast/waycast'>waycast</a> or waycasts
+            </li>
+        </ul>
+    </section>
+<section      id='intracast_waylink'>
+    <h2><a href='#intracast_waylink'>
+                  intracast waylink</a></h2>
+    <ul>
+        <li>
+            a <a href='http://reluk.ca/project/wayic/script/doc.task#waylink'>waylink</a>
+            to a target node in the same waycast
+            </li>
+        </ul>
+    </section>
+
+        <!-- >>> reindent -->
+        </body>
+    </html>
