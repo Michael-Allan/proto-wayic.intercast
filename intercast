@@ -70,7 +70,7 @@
     <ul>
         <li>
             a <a href='http://reluk.ca/project/wayic/script/doc.task#waylink'>waylink</a>
-            to a target node in a separate waycast
+            whose target node is in a separate waycast
             </li>
         </ul>
     </section>

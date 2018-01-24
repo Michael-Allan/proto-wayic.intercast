@@ -22,7 +22,7 @@
     <ul>
         <li>
             a <a href='http://reluk.ca/project/wayic/script/doc.task#waylink'>waylink</a>
-            to a target node in the same waycast
+            whose target node is in the same waycast
             </li>
         </ul>
     </section>
