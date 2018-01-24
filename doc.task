@@ -1,171 +1,248 @@
 wayic.intercast/doc.task - Documentation in rough
 
-    < pushd ~/work/wayic/intercast
-    ( http://reluk.ca/project/wayic/intercast/
-    ( http://reluk.ca/var/deploy/wayic/test/intercast/
-
-    ____________________________________________________________________________________________________
-    bit poll`
-    - a type of intercast network
-    - link form: bit vote
-        ( § bit vote
-    - purpose
-        - competitive and collaborative way definition among waycasters
-        - wayic consensus formation
-    [ count structure
-        - delegate cascade forest
-            ( like Votorola
-        - multiple votes per voter
-            ( unlike Votorola
-            - coalescing to a sum of 1 in their rootward flow
-            - purpose: efficient issue formation
-                - allows issues to be formally identified after the fact
-                    - in a natural manner
-                    - as a matter of collaborative practice
-                - initially voters need only specify the poll identifier
-                    - not worrying about the precise issue identification
-                      unless and until their votes get multiplied into separate issues
-                      by duplication (in another waylink network) of waybit's target identifier
-            - non-purposes
-                - side benefit
-                    - multi-voting for personal reasons
-                - drawback
-                    - may unintentionally impede consensus formation
-                        - which is pretty much *enforced* when a poll allows only 1
-    [ identification
-        ( notebook 2018.1.11
-        + poll
-            - form of identifier
-                * name
-                    - in the same format as a *cog:lid* attribute
-                        ( http://reluk.ca/project/wayic/script/doc.task § target nodes: the *lid* attribute
-            - specifies a forest
-            + poll branch
-                - form of identifier
-                    * set of candidate identifiers
-                        - one or more
-                - specifies a (potentially null) branch of the forest
-                    - namely that which includes *along its rootward path* all the specified candidates
-                - purpose: to correct for any scope mismatch between poll and issue
-                - non-purpose: side benefit:
-                    - restricting the scope of the vote for personal reasons
-                        - e.g. to restrict how the caster's vote is delegated as it flows rootward,
-                          such that a candidate vote shift outside the branch will nullify the caster's vote
-                + issue
-                    - form of identifier:
-                        - same as poll branch, of which it is part
-                        - but candidate set is a pipe set
-                    - issue identification is a matter of practice among collaborating waycasters
-                    - by including the issue's pipe identifier(s) in the poll branch identifier
-                        - and by reading the count from the (rootmost of the) pipe(s)
-                        - voters can effectively clamp the poll scope to the issue
-                        - and so correct for the scope mismatch
-    [ scope
-        + poll
-            - the declaration of a waybit
-            - namely that waybit formed as a waylink target node with an identifier (cog:lid)
-              matching that of the poll identifier
-            - including all content except:
-                - no start/end tag
-                - no referents (of links and such) external to the waybit
-                - no uniquely personal lines of text
-                    ( http://reluk.ca/project/wayic/copy/doc.task
-                    ( these to be ignored, Votorola style
-        + issue
-             - the declaration of a waybit
-             - namely the one that waycasters are actually collaborating on
-        [ mismatch between poll and issue scope
-            - the formal poll scope will be larger than the issue of concern (to participants)
-                - wherever unrelated waybits happen to share the same value of *cog:lid* attribute
-                - as it's a free-form tag
-            ( this is unlike in Votorola, where the scope is clamped to a simple, nominal identifier
-            ( this is correctable by adding a *poll branch identifier* to the bit vote
-            - cause of this mismatch:
-                - freeing the waylink target identifier to better serve its immediate function
-                - namely *target identification* in the context of a single waylink network
-                - by disengaging it from the function of polled *issue identification*
-
-    ____________________________________________________________________________________________________
-    bit vote`
-    - a type of intercast link
-    - see §§ implied bit vote, stem vote
-    - content: identifiers for:
-        + poll
-        + poll branch
-            - optional
-        + candidate
-
-    ____________________________________________________________________________________________________
-    implied bit vote`
-    - a type of bit vote
-    - form: intercast waylink
-    - matter: unqualified approval of a waybit
-
-    ____________________________________________________________________________________________________
-    link, intercast`
-    ( intercast#intercast_link
-    - see §§ bit vote, waylink
-
-    ____________________________________________________________________________________________________
-    network, intercast`
-    ( intercast#intercast_network
-    - here using terms 'link' and 'node' for its parts
+    - using network terms 'link' and 'node'
         ( not counter-intuitive jargon like 'arc', 'edge' and 'vertex'
         ( https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)
-    - types of intercast network
-        § bit poll
-        § waylink network
+    - changes required in other wayic projects:
+        = waycast structure is now based more on intercast waylinks and *variant* elements
+            ( notebook 2018.1.22-23
+            - commonly the waycaster declares the way as an intercast waylink *right from the root*
+                ( http://reluk.ca/project/wayic/lex/root#root_document
+                - often with attendant *variant* elements
+            - variant waybits (if any) will often be quite small
+                - occaisionally large
+                - and then maybe spread across multiple way files, as mine already are
+        = intercast waylink traversal in wayic.read
+            - no actual browser traversal to remote waycast
+            - rather wayic.read constructs the DOM of each remote waycast document on the fly
+                - from its cache of remote documents
+                - from the history API
+            - purpose
+                - for consistent way reading during link traversal
+                    - e.g. the same version of wayic.read, or other way renderer
+                - to enable showing the way as defined
+                    - with proper emplacement of variant waybits
 
     ____________________________________________________________________________________________________
-    stem vote`
-    - a type of bit vote
-    - form: *stem* element
-    - matter: qualified approval of a waybit
-    - the caster approves of the waybit while also casting a variant of it
-        * approved waybit
-            - the referent of the *stem* element
-                - the waylink target node that it points to
-        * variant waybit
-            - the parent of the *stem* element
-    * *stem* element
-        < cog:stem, namespace data:,wayscript.cog
-        - placement: child of a waybit
-        * *href* attribute
-            < no namespace
-            - in the same format as a *cog:link* attribute
-                ( http://reluk.ca/project/wayic/script/doc.task § source nodes: the *link* attribute
-            - points to a waylink target node
-    - typically the variant is itself a target node with the same identifier (*cog:lid*) as its stem
-        - thus the variant may itself be a stem with further variants of its own
-            - and so on
-        - thus stem votes may combine (in the bit poll) to form a forest
-            - enabling Votorola-style cascades of text and votes
+    genetic content`
+    - the part of a waybit's content that properly replicates across genetic links
+        - e.g. in forming waybit variants, or in maintaining them by intracast text flow
+        ( must be selective about this, as in Votorola difference bridging
+    - all differences of declared waybit content exclusive of:
+        - no start/end tag
+            - as these declare linkage etc.
+        - no referents (of links and such) external to the waybit
+            - as not actually declared, potentially huge, redundant etc.
+        - no uniquely personal lines of text
+            ( http://reluk.ca/project/wayic/copy/doc.task
+            - as not of interest to others
 
     ____________________________________________________________________________________________________
-    waylink`
-    ( an amendment to its documentation: http://reluk.ca/project/wayic/script/doc.task § waylink
-    - a type of link, both intracast and intercast
-        ( intercast#intercast_link
-    [ target identifier back-propagation
-        - each waylink source node
-            - by default
-            - inherits the identifier of its target node
-        - this is to enable recasting a stem vote
-            - which already (in the typical case) has an associated target identifier
-            - as an implied bit vote *without* breaking other waylinks/votes that happen to target it
+    genetic link`
+    < a type of (§) intercast link
+    - functions
+        - declares a waybit to be a member of a waybit population
+        - structures waybit populations by nominal lines of genetic descent
+        - indicates approval of ancestral waybit content
+            ( Votorola-style transitive vote flow ('delegate cascade') in a recombinant text
+            - each genetic link is formally a vote
+                - whereby the vote caster formally approves (votes for) the content of the parent
+                  and (by transitive vote flow) that of the ancestors
+            - here 'vote caster' means every waycaster for whom that link is on way
+                ( http://reluk.ca/project/wayic/lex/way#on_way
+                - why? to avoid pushing them into forming *direct* links merely to express approval
+                  that is already implied by their use (on way) of the ancestors' descendant
+    [ general to all forms
+        * referring waybit
+            - specified by all forms of genetic link
+                - this is a waybit local to the declaring waycast
+        * *link* attribute
+            < cog:link, namespace data:,wayscript.cog
+            ( cf: http://reluk.ca/project/wayic/script/doc.task § source nodes: the *link* attribute
+            ( optional in some forms
+            - a URL in form
+            - function (as part of a genetic link)
+                - effective only if the referent is:
+                    - a waybit
+                    - a member of the same population as the *referring waybit*
+                - declares
+                    - the referent waybit to be a genetic parent
+                    - the *referring waybit* to be its child
+            - meaning
+                - a nominal relation
+                    - does not claim an ontic relation
+                        - genetics as *actual* generative text flows and editorial influences
+                    - rather declares a nominal relation of *intended* genetics
+                        - to serve the practical (e.g. collaborative) purpose of the (§) waybit population
+                - a genetic relation
+                    - as opposed to a waypath parent-child relation
+                    ( cf. http://reluk.ca/project/wayic/script/doc.task § waypath relations § genealogical
+    [ particular forms
+        § intercast waylink
+            ( every intercast waylink is a genetic link
+            - function (as a genetic link)
+                - locates the *referring waybit* as the resolved waylink source node
+                - declares the source node to be:
+                    - a member of the population identified by the location of the target node
+                        ( viz. the value of the source node's *link* attribute in normal URL form
+                        - regardless of what population (if any) the target node itself belongs to
+                    - potentially a genetic child of the target node
+                        ( see § *link* attribute above
+                        - in which case, it is a clonal child
+        § *variant* element
+    - cycles
+        - formally possible in lines of descent (*link* attributes)
+            ( exactly as in Votorola
+        - meaning of cycles will vary with the particular function of the link under consideration
+        - effect will vary with the practical context, and may be blocked in some contexts
 
     ____________________________________________________________________________________________________
-    waylink network`
-    - a type of intercast network
-    - link form: waylink
-        - intra or intercast in any combination
-            ( http://reluk.ca/project/wayic/script/doc.task § waylink
-            ( intercast#intercast_waylink
-    - purposes
-        - joining waybits to make a way definition
-        - efficient sharing of a waybit declaration among multiple parts of a way definition
-            - or across way definitions
-        - collaborative way definition among waycasters
+    intercast link`
+    ( intercast#intercast_link
+    < intercast link (typology)
+        § genetic link
+        § intercast waylink
+
+    ____________________________________________________________________________________________________
+    intercast network`
+    ( intercast#intercast_network
+    - link form: intercast link
+    < intercast network (typology)
+        § waycaster network
+        § waybit population
+
+    ____________________________________________________________________________________________________
+    intercast waylink`
+    ( intercast#intercast_waylink
+    < a type of (§) intercast link
+    - used in
+        § waycaster network
+        § waybit population
+            < where it doubles as a form of (§) genetic link
+
+    ____________________________________________________________________________________________________
+    *variant* element`
+    - function
+        - declares a (§) genetic link
+        - replaces the content of the genetic parent (if declared in the link)
+            - wherever in the way definition it occurs
+            ( no matter how remote from the waycast, how deep (indirect) the linkage
+            - with that of the variant
+        - effective iff:
+             & the parent (referent of *cog:link*)
+                - and/or the content (referent of *href*)
+                - is on way
+                    ( http://reluk.ca/project/wayic/lex/way#on_way
+                - and so proper to the waycaster
+                    ( else it's weird
+             & the waycast declares another variant of the same population
+    - form
+          | <variant [cog:link='PARENT-URL'] [cog:population='POPULATION-ID'] [href='CONTENT-URL']>
+          |     [CONTENT]
+          |     </variant>
+        - genetic link, either or both of:
+            ( at least one must be declared
+            * *link* attribute
+                ( § genetic link § *link* attribute
+            * *population* attribute
+                < cog:population, namespace data:,wayscript.cog
+                - identifier of waybit population of which this variant is a member
+                - default value: PARENT-URL
+        - content, either of:
+            * inline content
+                - defines a new waybit
+                - declares it to be the *referring waybit*
+                    ( § genetic link § referring waybit
+            * *href* attribute
+                < no namespace
+                - an intracast, relative reference in form
+                    ( https://tools.ietf.org/html/rfc3986#section-4.2
+                    - thus proper to the waycaster
+                        ( else it's weird
+                - locates the *referring waybit*
+                    ( § genetic link § referring waybit
+    - placement: on way
+        ( http://reluk.ca/project/wayic/lex/way#on_way
+        - if only to make it easily reachable by processors
+
+    ____________________________________________________________________________________________________
+    waybit population`
+    < a type of intercast network
+    - a group of waybits interrelated by nominal lines of descent
+    - purpose
+        - competitive and collaborative way definition among waycasters
+            ( akin to recombinant text in textbender and Votorola
+        - efficient editorial search (among waybit variations)
+        - formation of way consensus
+            ( akin to Votorola poll
+    - network link form: genetic link
+    - identifier
+        - free form string
+        - often a URI, but no function other than string-based identification is here defined
+    [ typical practice
+        + subsurface variation
+            - changing the content of a linked waybit
+                - no matter how deep in the waycaster network (indirect) its linkage
+                - by making a variant of it
+            - the linked waybit
+                - is an intercast waylink target node
+                - is on way
+                - is the waybit you want to change
+                - will become the nominal parent of your newly made variant
+            - make an empty *variant* element
+                - insert it either near to the connecting waylink(s)
+                    - or in the root document
+                        ( http://reluk.ca/project/wayic/lex/root#root_document
+                    - or anywhere else in your waycast that's on way
+            * declaring the parentage
+                - add attribute cog:link='PARENT-URL' to reference the chosen parent
+                    ( § *variant* element
+            * declaring the population
+                - skip this if the parent is a member of no waybit population
+                    - instead let the population default to PARENT-URL
+                - add attribute cog:population='POPULATION-ID' to identify the parent's population
+                    - it's declared in the parent waycast
+                    - or inferrable from there
+                    ( typically a tool will tell you the value
+            * declaring the variant content
+                - copy the (§) genetic content of the parent
+                    - typically a tool does the proper content filtering
+                - paste it
+                    - either in the *variant* element
+                    - or elsewhere, referenced by adding the attribute href='CONTENT-URL'
+                - edit the content to change it
+        + shallow variation
+            - changing the content of a directly linked waybit
+            = write this
+                - replacing the waylink with a surface variant
+                - it ends up formed as a (§) surface variant
+        + surface variation
+            - pasting the variant content directly in line, no waylinkage
+            = write this
+                - situation
+                    - you already have non-variant waybit
+                    - you want to replace its content with variant content
+                        - or declare it (as is) to be a variant
+                - method
+                    - the replacement content is pasted into the waybit (or the waybit is left as is)
+                    - a contentless *variant* tag
+                        - typically inserted in the same waybit
+                            - along with the pasted content
+                            - as a waypath child
+                        - with an *href* to the waybit
+                        - and other attributes as per § subsurface
+        + delegation to another waycaster
+            - the other waycaster has declared a variant of your waybit, which you like
+            - you no longer want to maintain this waybit yourself
+            - replace it with an intercast waylink to the variant
+              and let the other waycaster maintain it
+
+    ____________________________________________________________________________________________________
+    waycaster network`
+    ( a type of intercast network
+    - purpose: collaborative way definition among waycasters
+    - link form: intercast waylink
+        ( intercast#intercast_waylink
 
 
 
