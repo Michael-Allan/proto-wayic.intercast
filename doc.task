@@ -3,25 +3,6 @@ wayic.intercast/doc.task - Documentation in rough
     - using network terms 'link' and 'node'
         ( not counter-intuitive jargon like 'arc', 'edge' and 'vertex'
         ( https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)
-    - changes required in other wayic projects:
-        = waycast structure is now based more on intercast waylinks and *variant* elements
-            ( notebook 2018.1.22-23
-            - commonly the waycaster declares the way as an intercast waylink *right from the root*
-                ( http://reluk.ca/project/wayic/lex/root#root_document
-                - often with attendant *variant* elements
-            - variant waybits (if any) will often be quite small
-                - occaisionally large
-                - and then maybe spread across multiple way files, as mine already are
-        = intercast waylink traversal in wayic.read
-            - no actual browser traversal to remote waycast
-            - rather wayic.read constructs the DOM of each remote waycast document on the fly
-                - from its cache of remote documents
-                - from the history API
-            - purpose
-                - for consistent way reading during link traversal
-                    - e.g. the same version of wayic.read, or other way renderer
-                - to enable showing the way as defined
-                    - with proper emplacement of variant waybits
 
     ____________________________________________________________________________________________________
     genetic content`
