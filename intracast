@@ -6,15 +6,8 @@
     <body>
         <!-- <<< deindent -->
 
-<section      id='intracast'>
-    <h2><a href='#intracast'>
-                  intracast</a></h2>
-    <ul>
-        <li>
-            (adjective) located or occuring within a
-            <a href='http://reluk.ca/project/wayic/cast/waycast'>waycast</a> or waycasts
-            </li>
-        </ul>
+<section id='intracast'>
+    <a rel='content-repository' href='http://reluk.ca/project/wayic/cast/intracast#intracast'>content</a>
     </section>
 <section      id='intracast_waylink'>
     <h2><a href='#intracast_waylink'>
@@ -28,5 +21,6 @@
     </section>
 
         <!-- >>> reindent -->
+        <script src='http://reluk.ca/project/wayic/lex/_/reader.js'/>
         </body>
     </html>
