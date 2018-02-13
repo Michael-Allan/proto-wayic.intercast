@@ -5,6 +5,46 @@ wayic.intercast/doc.task - Documentation in rough
         ( https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)
 
     ____________________________________________________________________________________________________
+    biological analogues of intercast networking`
+    - intercast networking viewed as a technique of recombinant text
+        ( q.v. in projects textbender and Votorola
+
+                        way  ∼  an individual of a way population
+             way population  ∼  the ways of a waycaster network
+
+                  wayscript  ∼  genetic code
+                    waycast  ∼  the genotype of a way
+
+                     waybit  ∼  a gene
+             variant waybit  ∼  an allele
+          waybit population  ∼  alleles at the same locus
+          waybit population  ∼  locus
+                   identity
+
+    - here the biological analogy is expressed at a larger granularity than elsewhere
+      in the documentation
+        - which can be confusing
+        - elsewhere the individual (implied) is the waybit
+            - but here the individual is the way
+            - while the waybits are only its genes
+    - the analogy may be applied further depending on way context
+        - this way, for example, would have analogues in the field of evolutionary ecology
+            < http://reluk.ca/project/way/visionary/way.xht
+        - analogues:
+            * extinction avoidance
+                - the endmost goal of "endless continuity" is analogous to *extinction avoidance*
+            * demographic rescue
+                - the overall means of securing that continuity
+                  in the "existential refuge of great distances"
+                  is analogous to the mechanism of *demographic rescue* by *dispersal*
+            * evolutionary rescue
+                - the underlying means of intercast networking *as a technique of recombinant text*
+                  is analogous to the mechanism of *evolutionary rescue*
+                - the demographic rescue
+                    - being genetically encoded and evolved
+                    - is thereby *also* a case of evolutionary rescue
+
+    ____________________________________________________________________________________________________
     genetic content`
     - the part of a waybit's content that properly replicates across genetic links
         - e.g. in forming waybit variants, or in maintaining them by intracast text flow
@@ -23,7 +63,7 @@ wayic.intercast/doc.task - Documentation in rough
     < a type of (§) intercast link
     - functions
         - declares a waybit to be a member of a waybit population
-        - structures waybit populations by nominal lines of genetic descent
+        - structures the waybit population by nominal lines of genetic descent
         - indicates approval of ancestral waybit content
             ( Votorola-style transitive vote flow ('delegate cascade') in a recombinant text
             - each genetic link is formally a vote
@@ -159,7 +199,13 @@ wayic.intercast/doc.task - Documentation in rough
     - network link form: genetic link
     - identifier
         - free form string
-        - often a URI, but no function other than string-based identification is here defined
+        - actually, as it happens, a URI
+          because it must be referenceable in both forms of genetic link:
+            * intercast waylink
+                - where it is referenced by the *link* attribute
+            * *variant* element
+                - where it is referenced by the *population* attribute
+            - but here it has no function other than string-based identification
     [ typical practice
         + subsurface variation
             - changing the content of a linked waybit
