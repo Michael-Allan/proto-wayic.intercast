@@ -113,7 +113,7 @@ wayic.intercast/doc.task - Documentation in rough
                 - distinct from the synchronic (so called) 'genealogical' relation
                   which a waylink also defines
                     ( http://reluk.ca/project/wayic/script/doc.task § waypath relations § genealogical
-        § *variant* element, q.v.
+        § *patch* element, q.v.
     - a nominal relation
         - the declared relation is nominal
             - as opposed to ontic
@@ -151,7 +151,7 @@ wayic.intercast/doc.task - Documentation in rough
             < where it doubles as a form of (§) genetic link
 
     ____________________________________________________________________________________________________
-    *variant* element`
+    *patch* element`
     - function
         - declares a variant waybit
             - one whose content differs from other members of the waybit population
@@ -168,9 +168,9 @@ wayic.intercast/doc.task - Documentation in rough
                 ( else it's weird
              & the waycast declares no other variant waybit of the same population
     - form
-          | <variant [cog:link='PARENT-URL'] [cog:population='POPULATION-ID'] [href='CONTENT-URL']>
+          | <patch [cog:link='PARENT-URL'] [cog:population='POPULATION-ID'] [href='CONTENT-URL']>
           |     [CONTENT]
-          |     </variant>
+          |     </patch>
         - genetic link attributes
             - at least one of these must be declared
             * *link* attribute
@@ -221,7 +221,7 @@ wayic.intercast/doc.task - Documentation in rough
                     - you already have waybit
                     - you want to declare it to be a variant waybit
                 - method
-                    - a contentless *variant* tag
+                    - an empty *patch* element
                         - typically placed within the waybit
                         - with an *href* attribute referencing the waybit
                         - and possibly other attributes
@@ -246,12 +246,12 @@ wayic.intercast/doc.task - Documentation in rough
                 - is on way
                 - is the waybit you want to change
                 - will become the nominal genetic parent of your newly made variant
-            - make an empty *variant* element
+            - make an empty *patch* element
                 - preferably near to the intercast waylink
                 - the one that gives access to the content you wish to change
             * declaring the genetic parentage
                 - add attribute cog:link='PARENT-URL' to reference the chosen genetic parent
-                    ( § *variant* element
+                    ( § *patch* element
                     - namely the waybit whose content you want to change
             * declaring the population
                 - skip this if the parent is a member of no waybit population
@@ -264,7 +264,7 @@ wayic.intercast/doc.task - Documentation in rough
                 - copy the (§) genetic content of the parent
                     - typically a tool will properly filter the content for you
                 - paste it
-                    - either in the *variant* element
+                    - either in the *patch* element
                     - or elsewhere, referenced by adding the attribute href='CONTENT-URL'
                 - edit the content to change it
         + delegation to another waycaster
