@@ -6,111 +6,120 @@ wayic.intercast/doc.task - Documentation in rough
 
     ____________________________________________________________________________________________________
     biological analogues of intercast networking`
-    - intercast networking viewed as a technique of recombinant text
+    - intercast networking viewed as a technique of recombinant text †
         ( q.v. in projects textbender and Votorola
 
-                        way  ∼  an individual of a way population
-             way population  ∼  the ways of a waycaster network
+                  Intercast
+                 networking    Biological analogue †
+          -----------------    --------------------------------
+                        way    individual of a way population
+          waycaster network    way population
 
-                  wayscript  ∼  genetic code
-                    waycast  ∼  the genotype of a way
+                  wayscript    genetic material, genetic coding
+                    waycast    genotype of an individual
 
-                     waybit  ∼  a gene
-             variant waybit  ∼  an allele
-          waybit population  ∼  alleles at the same locus
-          waybit population  ∼  locus
+                     waybit    gene
+             variant waybit    allele
+          waybit population    alleles at a particular locus
+          waybit population    locus
                    identity
 
-    - here the biological analogy is expressed at a larger granularity than elsewhere
-      in the documentation
-        - which can be confusing
-        - elsewhere the individual (implied) is the waybit
+    † here the biological analogy is expressed at a larger granularity than elsewhere in this document
+        - elsewhere the waybit is analogous to the individual
             - but here the individual is the way
             - while the waybits are only its genes
     - the analogy may be applied further depending on way context
-        - this way, for example, would have analogues in the field of evolutionary ecology
+        - this way
             < http://reluk.ca/project/waycast/visionary/way.xht
-        - analogues:
-            * extinction avoidance
-                - the endmost goal of "endless continuity" is analogous to *extinction avoidance*
-            * demographic rescue
-                - the overall means of securing that continuity
-                  in the "existential refuge of great distances"
-                  is analogous to the mechanism of *demographic rescue* by *dispersal*
-            * evolutionary rescue
-                - the underlying means of intercast networking *as a technique of recombinant text*
-                  is analogous to the mechanism of *evolutionary rescue*
-                - the demographic rescue
-                    - being genetically encoded and evolved
-                    - is thereby *also* a case of evolutionary rescue
+            - for example
+            - would have analogues in the field of evolutionary ecology:
+                * extinction avoidance
+                    - the endmost goal of "endless continuity" is analogous to *extinction avoidance*
+                * demographic rescue
+                    - the overall means of securing that continuity
+                      in the "existential refuge of great distances"
+                      is analogous to the mechanism of *demographic rescue* by *dispersal*
+                * evolutionary rescue
+                    - the underlying means of intercast networking *as a technique of recombinant text*
+                      is analogous to the mechanism of *evolutionary rescue*
+                    - the demographic rescue
+                        - being genetically encoded and evolved
+                        - is thereby *also* a case of evolutionary rescue
 
     ____________________________________________________________________________________________________
     genetic content`
-    - the part of a waybit's content that properly replicates across genetic links
-        - e.g. in forming waybit variants, or in maintaining them by intracast text flow
-        ( must be selective about this, as in Votorola difference bridging
-    - all differences of declared waybit content exclusive of:
-        - no start/end tag
-            - as these declare linkage etc.
-        - no referents (of links and such) external to the waybit
-            - as not actually declared, potentially huge, redundant etc.
-        - no uniquely personal lines of text
+    - genetic content is that part of a waybit's content that replicates across genetic links
+      [in order] to form waybit variants
+        - or to maintain them by intracast text flow
+        ( it's important to be selective about this, as in Votorola difference bridging
+    - it excludes:
+        - start and end tags
+        - referents (of links and such) that are external to the waybit
+        - uniquely personal lines of text
             ( http://reluk.ca/project/wayic/copy/doc.task
-            - as not of interest to others
 
     ____________________________________________________________________________________________________
     genetic link`
     < a type of (§) intercast link
-    - functions
+    - function
         - declares a waybit to be a member of a waybit population
         - structures the waybit population by nominal lines of genetic descent
         - indicates approval of ancestral waybit content
             ( Votorola-style transitive vote flow ('delegate cascade') in a recombinant text
             - each genetic link is formally a vote
-                - whereby the vote caster formally approves (votes for) the content of the parent
-                  and (by transitive vote flow) that of the ancestors
-            - here 'vote caster' means every waycaster for whom that link is on way
+                - whereby the caster (vote caster = waycaster) formally approves (votes for)
+                  the content of the genetic parent and (by transitive vote flow) its ancestors
+            - here the vote caster is every waycaster for whom that genetic link is on way
                 ( http://reluk.ca/project/wayic/lex/way#on_way
-                - why? to avoid pushing them into forming *direct* links merely to express approval
-                  that is already implied by their use (on way) of the ancestors' descendant
+                - warrant
+                    - being on way
+                        - the waybit is used
+                        - and usage implies approval
+                    - to avoid forcing the formation of direct links merely to express the approvals
+                      that are already implied by the indirect link
     [ general to all forms
         * referring waybit
-            - specified by all forms of genetic link
-                - this is a waybit local to the declaring waycast
+            - all genetic links specify a referring waybit
+            - is a waybit local to the declaring waycast
         * *link* attribute
             < cog:link, namespace data:,wayscript.cog
             ( cf: http://reluk.ca/project/wayic/script/doc.task § source nodes: the *link* attribute
-            ( optional in some forms
-            - a URL in form
-            - function (as part of a genetic link)
-                - effective only if the referent is:
+            - most genetic links specify a *link* attribute
+            - the *link* attribute is a URL in form
+            - function (*as* a genetic link)
+                - effective only if the target node is:
                     - a waybit
                     - a member of the same population as the *referring waybit*
+                        - otherwise it's a link across a population boundary
+                            - which is instead a phylogenetic link
+                            - declaring the referent population to be a parent population
                 - declares
-                    - the referent waybit to be a genetic parent
-                    - the *referring waybit* to be its child
-            - meaning
-                - a nominal relation
-                    - does not claim an ontic relation
-                        - genetics as *actual* generative text flows and editorial influences
-                    - rather declares a nominal relation of *intended* genetics
-                        - to serve the practical (e.g. collaborative) purpose of the (§) waybit population
-                - a genetic relation
-                    - as opposed to a waypath parent-child relation
-                    ( cf. http://reluk.ca/project/wayic/script/doc.task § waypath relations § genealogical
+                    - the target node to be a genetic parent
+                    - the referring waybit to be its genetic child
     [ particular forms
         § intercast waylink
-            ( every intercast waylink is a genetic link
-            - function (as a genetic link)
-                - locates the *referring waybit* as the resolved waylink source node
-                - declares the source node to be:
-                    - a member of the population identified by the location of the target node
-                        ( viz. the value of the source node's *link* attribute in normal URL form
-                        - regardless of what population (if any) the target node itself belongs to
-                    - potentially a genetic child of the target node
-                        ( see § *link* attribute above
-                        - in which case, it is a clonal child
-        § *variant* element
+            - every intercast waylink is also a genetic link
+            - function (*as* a genetic link)
+                - locates the *referring waybit* as that replica of the target node
+                  that results from resolving the waylink
+                - declares the referring waybit to be a member of the target node's population
+                    - and a clonal child of the target node
+                - asserts that the target node is a member of a population
+                    - if the target node declares no population itself
+                        - nor implies any by its encoding
+                        - then it is hereby declared a member (the founding member) of population L
+                        - where L is the normalized value of the *link* attribute
+            - meaning: a diachronic genealogical relation
+                - distinct from the synchronic (so called) 'genealogical' relation
+                  which a waylink also defines
+                    ( http://reluk.ca/project/wayic/script/doc.task § waypath relations § genealogical
+        § *variant* element, q.v.
+    - a nominal relation
+        - the declared relation is nominal
+            - as opposed to ontic
+            - it does not imply actual generative text flows and editorial influences
+        - rather it implies an *intended* genetics in accord with the practical
+          (e.g. collaborative) purpose of the (§) waybit population
     - cycles
         - formally possible in lines of descent (*link* attributes)
             ( exactly as in Votorola
@@ -144,9 +153,10 @@ wayic.intercast/doc.task - Documentation in rough
     ____________________________________________________________________________________________________
     *variant* element`
     - function
+        - declares a variant waybit
+            - one whose content differs from other members of the waybit population
         - declares a (§) genetic link
-        - replaces the content of the genetic parent (if declared in the link)
-            - wherever in the way definition it occurs
+        - replaces the content of the genetic parent (if any) wherever in the way definition it occurs
             ( no matter how remote from the waycast, how deep (indirect) the linkage
             - with that of the variant
         - effective iff:
@@ -155,20 +165,20 @@ wayic.intercast/doc.task - Documentation in rough
                 - is on way
                     ( http://reluk.ca/project/wayic/lex/way#on_way
                 - and so proper to the waycaster
-                    ( else it's weird
-             & the waycast declares another variant of the same population
+                ( else it's weird
+             & the waycast declares no other variant waybit of the same population
     - form
           | <variant [cog:link='PARENT-URL'] [cog:population='POPULATION-ID'] [href='CONTENT-URL']>
           |     [CONTENT]
           |     </variant>
-        - genetic link, either or both of:
-            ( at least one must be declared
+        - genetic link attributes
+            - at least one of these must be declared
             * *link* attribute
                 ( § genetic link § *link* attribute
             * *population* attribute
                 < cog:population, namespace data:,wayscript.cog
-                - identifier of waybit population of which this variant is a member
-                - default value: PARENT-URL
+                - identifies the variant waybit's population
+                - default value: normalized PARENT-URL
         - content, either of:
             * inline content
                 - defines a new waybit
@@ -179,12 +189,15 @@ wayic.intercast/doc.task - Documentation in rough
                 - an intracast, relative reference in form
                     ( https://tools.ietf.org/html/rfc3986#section-4.2
                     - thus proper to the waycaster
-                        ( else it's weird
+                    ( else it's weird
                 - locates the *referring waybit*
                     ( § genetic link § referring waybit
-    - placement: on way
-        ( http://reluk.ca/project/wayic/lex/way#on_way
-        - if only to make it easily reachable by processors
+    - placement
+        - in an on-way document
+            ( http://reluk.ca/project/wayic/lex/way#on_way
+            - which is the root document or any other document that contains an on-way element
+                ( http://reluk.ca/project/wayic/lex/root#root_document
+        - thereby easily detectable by processors
 
     ____________________________________________________________________________________________________
     waybit population`
@@ -193,21 +206,38 @@ wayic.intercast/doc.task - Documentation in rough
     - purpose
         - competitive and collaborative way definition among waycasters
             ( akin to recombinant text in textbender and Votorola
-        - efficient editorial search (among waybit variations)
+        - efficient editorial search among variant waybits
         - formation of way consensus
-            ( akin to Votorola poll
+            ( akin to a Votorola poll
     - network link form: genetic link
-    - identifier
-        - free form string
-        - actually, as it happens, a URI
-          because it must be referenceable in both forms of genetic link:
-            * intercast waylink
-                - where it is referenced by the *link* attribute
-            * *variant* element
-                - where it is referenced by the *population* attribute
-            - but here it has no function other than string-based identification
+    - identifier: a URI in form
+        - only because it happens to be referenced by the *link* attribute of genetic links
+            ( otherwise it could be a free form string
     [ typical practice
+        + surface variation
+            - pasting the variant content directly in line, no waylinkage
+            = write this
+                - situation
+                    - you already have waybit
+                    - you want to declare it to be a variant waybit
+                - method
+                    - a contentless *variant* tag
+                        - typically placed within the waybit
+                        - with an *href* attribute referencing the waybit
+                        - and possibly other attributes
+                            ( as per § subsurface variation
+        + shallow variation
+            - subsurface variation (§) of a directly linked waybit
+            - form, either of
+                | generalized subsurface variant
+                    ( § subsurface variation
+                | surface variant
+                    = write this
+                        - replacing the waylink with a surface variant
+                            ( § surface variation
+                        - it ends up formed as such
         + subsurface variation
+            ( generalized form
             - changing the content of a linked waybit
                 - no matter how deep in the waycaster network (indirect) its linkage
                 - by making a variant of it
@@ -215,49 +245,28 @@ wayic.intercast/doc.task - Documentation in rough
                 - is an intercast waylink target node
                 - is on way
                 - is the waybit you want to change
-                - will become the nominal parent of your newly made variant
+                - will become the nominal genetic parent of your newly made variant
             - make an empty *variant* element
-                - insert it either near to the connecting waylink(s)
-                    - or in the root document
-                        ( http://reluk.ca/project/wayic/lex/root#root_document
-                    - or anywhere else in your waycast that's on way
-            * declaring the parentage
-                - add attribute cog:link='PARENT-URL' to reference the chosen parent
+                - preferably near to the intercast waylink
+                - the one that gives access to the content you wish to change
+            * declaring the genetic parentage
+                - add attribute cog:link='PARENT-URL' to reference the chosen genetic parent
                     ( § *variant* element
+                    - namely the waybit whose content you want to change
             * declaring the population
                 - skip this if the parent is a member of no waybit population
-                    - instead let the population default to PARENT-URL
+                    - instead letting the population default to PARENT-URL
                 - add attribute cog:population='POPULATION-ID' to identify the parent's population
-                    - it's declared in the parent waycast
-                    - or inferrable from there
-                    ( typically a tool will tell you the value
+                    - it's declared in the genetic parent
+                        - or inferrable from it
+                        ( typically a tool will tell you the value
             * declaring the variant content
                 - copy the (§) genetic content of the parent
-                    - typically a tool does the proper content filtering
+                    - typically a tool will properly filter the content for you
                 - paste it
                     - either in the *variant* element
                     - or elsewhere, referenced by adding the attribute href='CONTENT-URL'
                 - edit the content to change it
-        + shallow variation
-            - changing the content of a directly linked waybit
-            = write this
-                - replacing the waylink with a surface variant
-                - it ends up formed as a (§) surface variant
-        + surface variation
-            - pasting the variant content directly in line, no waylinkage
-            = write this
-                - situation
-                    - you already have non-variant waybit
-                    - you want to replace its content with variant content
-                        - or declare it (as is) to be a variant
-                - method
-                    - the replacement content is pasted into the waybit (or the waybit is left as is)
-                    - a contentless *variant* tag
-                        - typically inserted in the same waybit
-                            - along with the pasted content
-                            - as a waypath child
-                        - with an *href* to the waybit
-                        - and other attributes as per § subsurface
         + delegation to another waycaster
             - the other waycaster has declared a variant of your waybit, which you like
             - you no longer want to maintain this waybit yourself
@@ -269,7 +278,6 @@ wayic.intercast/doc.task - Documentation in rough
     ( a type of intercast network
     - purpose: collaborative way definition among waycasters
     - link form: intercast waylink
-        ( intercast#intercast_waylink
 
 
 
