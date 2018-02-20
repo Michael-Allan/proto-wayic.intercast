@@ -127,6 +127,23 @@ wayic.intercast/doc.task - Documentation in rough
         - effect will vary with the practical context, and may be blocked in some contexts
 
     ____________________________________________________________________________________________________
+    intercast commitment declaration`
+    < see also wayic.script § commitment declaration § intracast
+    - clearly one cannot write it into another's way documents
+    * placement
+        - within a special form of variant waybit (patch)
+        - one that allows a for fine-tuned specification of the exact genetic parent
+          such that it needn't be declared as targetable
+    * fine-tuned specification
+        - an XPath reference
+        - constrained to a rigid pattern for ease of processing
+        - formed with tool assistance
+        - brittle
+            - might have to be manually amended when broken
+            - in default of a more fexible approach such as fuzzy XPath matching
+                - or some other mode of fuzzy anchoring
+
+    ____________________________________________________________________________________________________
     intercast link`
     ( intercast#intercast_link
     < intercast link (typology)
