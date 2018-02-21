@@ -213,7 +213,7 @@ wayic.intercast/doc.task - Documentation in rough
         - in an on-way document
             ( http://reluk.ca/project/wayic/lex/way#on_way
             - which is the root document or any other document that contains an on-way element
-                ( http://reluk.ca/project/wayic/lex/root#root_document
+                ( http://reluk.ca/project/wayic/cast/root#root_document
         - thereby easily detectable by processors
 
     ____________________________________________________________________________________________________
