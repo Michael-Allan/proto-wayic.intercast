@@ -4,7 +4,7 @@
         <title>‘intracast’</title>
         </head>
     <body>
-        <!-- <<< deindent -->
+
 
 <section id='intracast'>
     <a rel='content-repository' href='http://reluk.ca/project/wayic/cast/intracast#intracast'>content</a>
@@ -20,7 +20,7 @@
         </ul>
     </section>
 
-        <!-- >>> reindent -->
+
         <script src='http://reluk.ca/project/wayic/lex/_/reader.js'/>
         </body>
     </html>
