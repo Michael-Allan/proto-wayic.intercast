@@ -129,7 +129,7 @@ wayic.intercast/doc.task - Documentation in rough
     ____________________________________________________________________________________________________
     intercast commitment declaration`
     < see also wayic.script § commitment declaration § intracast
-    - clearly one cannot write it into another's way documents
+    - clearly one cannot write it into another's way declaration documents
     * placement
         - within a special form of variant waybit (patch)
         - one that allows a for fine-tuned specification of the exact genetic parent
@@ -212,8 +212,9 @@ wayic.intercast/doc.task - Documentation in rough
     - placement
         - in an on-way document
             ( http://reluk.ca/project/wayic/lex/way#on_way
-            - which is the root document or any other document that contains an on-way element
-                ( http://reluk.ca/project/wayic/cast/root#root_document
+            - which is the root way declaration document
+                ( http://reluk.ca/project/wayic/cast/root#root_way_declaration_document
+                - or any other document that contains an on-way element
         - thereby easily detectable by processors
 
     ____________________________________________________________________________________________________
