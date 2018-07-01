@@ -129,15 +129,16 @@ wayic.intercast/doc.task - Documentation in rough
     ____________________________________________________________________________________________________
     intercast commitment declaration`
     < see also wayic.script § commitment declaration § intracast
-    - clearly one cannot write it into another's way declaration documents
+    - the wayscribe cannot, of course, write the declaration into another's waycast
     * placement
         - within a special form of variant waybit (patch)
-        - one that allows a for fine-tuned specification of the exact genetic parent
-          such that it needn't be declared as targetable
+        - one that allows a fine-tuned specification of the exact genetic parent
+          such that it need not be declared as targetable
     * fine-tuned specification
         - an XPath reference
         - constrained to a rigid pattern for ease of processing
         - formed with tool assistance
+            ( cf. uses of XPath elsewhere in wayic tools
         - brittle
             - might have to be manually amended when broken
             - in default of a more fexible approach such as fuzzy XPath matching
