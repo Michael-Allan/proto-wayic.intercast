@@ -47,6 +47,15 @@ wayic.intercast/doc.task - Documentation in rough
                         - is thereby *also* a case of evolutionary rescue
 
     ____________________________________________________________________________________________________
+    design constraints`
+    [ ⤓ minimal
+        - necessary form of an intercast network
+        * waycast publication
+            - waycast served to the web with a response header of "Access-Control-Allow-Origin: *"
+                ( cf. http://reluk.ca/project/wayic/lex/#web_serving
+                - for sake of intercast waylink resolution
+
+    ____________________________________________________________________________________________________
     genetic content`
     - genetic content is that part of a waybit's content that replicates across genetic links
       [in order] to form waybit variants
