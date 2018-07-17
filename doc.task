@@ -60,7 +60,7 @@ wayic.intercast/doc.task - Documentation in rough
     - genetic content is that part of a waybit's content that replicates across genetic links
       [in order] to form waybit variants
         - or to maintain them by intracast text flow
-        ( it's important to be selective about this, as in Votorola difference bridging
+        ( it is important to be selective about this, as in Votorola difference bridging
     - it excludes:
         - start and end tags
         - referents (of links and such) that are external to the waybit
@@ -99,7 +99,7 @@ wayic.intercast/doc.task - Documentation in rough
                 - effective only if the target node is:
                     - a waybit
                     - a member of the same population as the *referring waybit*
-                        - otherwise it's a link across a population boundary
+                        - otherwise it is a link across a population boundary
                             - which is instead a phylogenetic link
                             - declaring the referent population to be a parent population
                 - declares
@@ -191,8 +191,8 @@ wayic.intercast/doc.task - Documentation in rough
                 - and/or the content (referent of *href*)
                 - is on way
                     ( http://reluk.ca/project/wayic/lex/way#on_way
-                - and so proper to the waycaster
-                ( else it's weird
+                - so proper to the waycaster
+                ( else it is weird
              & the waycast declares no other variant waybit of the same population
     - form
           | <patch [cog:link='PARENT-URL'] [cog:population='POPULATION-ID'] [href='CONTENT-URL']>
@@ -216,7 +216,7 @@ wayic.intercast/doc.task - Documentation in rough
                 - an intracast, relative reference in form
                     ( https://tools.ietf.org/html/rfc3986#section-4.2
                     - thus proper to the waycaster
-                    ( else it's weird
+                    ( else it is weird
                 - locates the *referring waybit*
                     ( § genetic link § referring waybit
     - placement
@@ -285,7 +285,7 @@ wayic.intercast/doc.task - Documentation in rough
                 - skip this if the parent is a member of no waybit population
                     - instead letting the population default to PARENT-URL
                 - add attribute cog:population='POPULATION-ID' to identify the parent's population
-                    - it's declared in the genetic parent
+                    - it is declared in the genetic parent
                         - or inferrable from it
                         ( typically a tool will tell you the value
             * declaring the variant content
