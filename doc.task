@@ -4,8 +4,8 @@ wayic.intercast/doc.task - Documentation in rough
         ( not counter-intuitive jargon like 'arc', 'edge' and 'vertex'
         ( https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)
 
-    ____________________________________________________________________________________________________
-    biological analogues of intercast networking`
+    ────────────────────────────────────────────────────────────────────────────────────────────────────
+    Biological analogues of intercast networking`
     - intercast networking viewed as a technique of recombinant text †
         ( q.v. in projects textbender and Votorola
 
@@ -46,8 +46,8 @@ wayic.intercast/doc.task - Documentation in rough
                         - being genetically encoded and evolved
                         - is thereby *also* a case of evolutionary rescue
 
-    ____________________________________________________________________________________________________
-    design constraints`
+    ────────────────────────────────────────────────────────────────────────────────────────────────────
+    Design constraints`
     [ ⤓ minimal
         - necessary form of an intercast network
         * waycast publication
@@ -55,8 +55,8 @@ wayic.intercast/doc.task - Documentation in rough
                 ( cf. http://reluk.ca/project/wayic/lex/#web_serving
                 - for sake of intercast waylink resolution
 
-    ____________________________________________________________________________________________________
-    genetic content`
+    ────────────────────────────────────────────────────────────────────────────────────────────────────
+    Genetic content`
     - genetic content is that part of a waybit's content that replicates across genetic links
       [in order] to form waybit variants
         - or to maintain them by intracast text flow
@@ -67,8 +67,8 @@ wayic.intercast/doc.task - Documentation in rough
         - uniquely personal lines of text
             ( http://reluk.ca/project/wayic/copy/doc.task
 
-    ____________________________________________________________________________________________________
-    genetic link`
+    ────────────────────────────────────────────────────────────────────────────────────────────────────
+    Genetic link`
     < a type of (§) intercast link
     - function
         - declares a waybit to be a member of a waybit population
@@ -119,9 +119,9 @@ wayic.intercast/doc.task - Documentation in rough
                         - then it is hereby declared a member (the founding member) of population L
                         - where L is the normalized value of the *link* attribute
             - meaning: a diachronic genealogical relation
-                - distinct from the synchronic (so called) 'genealogical' relation
-                  which a waylink also defines
-                    ( http://reluk.ca/project/wayic/script/doc.task § waypath relations § genealogical
+                - distinct from any synchronic, merely formal (and so meaningless)
+                  genealogical relation of nesting in which the waylink nodes may be involved
+                    ( http://reluk.ca/project/wayic/script/doc.task § Nesting of waybit elements
         § *patch* element, q.v.
     - a nominal relation
         - the declared relation is nominal
@@ -135,8 +135,8 @@ wayic.intercast/doc.task - Documentation in rough
         - meaning of cycles will vary with the particular function of the link under consideration
         - effect will vary with the practical context, and may be blocked in some contexts
 
-    ____________________________________________________________________________________________________
-    intercast commitment declaration`
+    ────────────────────────────────────────────────────────────────────────────────────────────────────
+    Intercast commitment declaration`
     < see also wayic.script § commitment declaration § intracast
     - the wayscribe cannot, of course, write the declaration into another's waycast
     * placement
@@ -153,23 +153,23 @@ wayic.intercast/doc.task - Documentation in rough
             - in default of a more fexible approach such as fuzzy XPath matching
                 - or some other mode of fuzzy anchoring
 
-    ____________________________________________________________________________________________________
-    intercast link`
+    ────────────────────────────────────────────────────────────────────────────────────────────────────
+    Intercast link`
     ( intercast#intercast_link
     < intercast link (typology)
         § genetic link
         § intercast waylink
 
-    ____________________________________________________________________________________________________
-    intercast network`
+    ────────────────────────────────────────────────────────────────────────────────────────────────────
+    Intercast network`
     ( intercast#intercast_network
     - link form: intercast link
     < intercast network (typology)
         § waycaster network
         § waybit population
 
-    ____________________________________________________________________________________________________
-    intercast waylink`
+    ────────────────────────────────────────────────────────────────────────────────────────────────────
+    Intercast waylink`
     ( intercast#intercast_waylink
     < a type of (§) intercast link
     - used in
@@ -177,7 +177,7 @@ wayic.intercast/doc.task - Documentation in rough
         § waybit population
             < where it doubles as a form of (§) genetic link
 
-    ____________________________________________________________________________________________________
+    ────────────────────────────────────────────────────────────────────────────────────────────────────
     *patch* element`
     - function
         - declares a variant waybit
@@ -227,8 +227,8 @@ wayic.intercast/doc.task - Documentation in rough
                 - or any other document that contains an on-way element
         - thereby easily detectable by processors
 
-    ____________________________________________________________________________________________________
-    waybit population`
+    ────────────────────────────────────────────────────────────────────────────────────────────────────
+    Waybit population`
     < a type of intercast network
     - a group of waybits interrelated by nominal lines of descent
     - purpose
@@ -301,8 +301,8 @@ wayic.intercast/doc.task - Documentation in rough
             - replace it with an intercast waylink to the variant
               and let the other waycaster maintain it
 
-    ____________________________________________________________________________________________________
-    waycaster network`
+    ────────────────────────────────────────────────────────────────────────────────────────────────────
+    Waycaster network`
     ( a type of intercast network
     - purpose: collaborative way definition among waycasters
     - link form: intercast waylink
