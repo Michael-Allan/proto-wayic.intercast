@@ -39,17 +39,17 @@
             a system of intercast relations
             </li>
         <li>
-            a group of waycasts or waycasters joined by intercast links
+            a group of waycasts or waycasters bound by intercast links
             </li>
         </ul>
     </section>
-<section      id='intercast_waylink'>
-    <h2><a href='#intercast_waylink'>
-                  intercast waylink</a></h2>
+<section      id='intercast_joint'>
+    <h2><a href='#intercast_joint'>
+                  intercast joint</a></h2>
     <ul>
         <li>
-            a <a href='http://reluk.ca/project/wayic/script/doc.task#waylink'>waylink</a>
-            whose target node is in a separate waycast
+            a <a href='http://reluk.ca/project/wayic/script/referential_joint'>referential joint</a>
+            between a surjoining element in one waycast and a subjoining in another
             </li>
         </ul>
     </section>

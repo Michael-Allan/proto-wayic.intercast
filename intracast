@@ -9,13 +9,13 @@
 <section id='intracast'>
     <a rel='content-repository' href='http://reluk.ca/project/wayic/cast/intracast#intracast'>content</a>
     </section>
-<section      id='intracast_waylink'>
-    <h2><a href='#intracast_waylink'>
-                  intracast waylink</a></h2>
+<section      id='intracast_joint'>
+    <h2><a href='#intracast_joint'>
+                  intracast joint</a></h2>
     <ul>
         <li>
-            a <a href='http://reluk.ca/project/wayic/script/doc.task#waylink'>waylink</a>
-            whose target node is in the same waycast
+            a <a href='http://reluk.ca/project/wayic/script/referential_joint'>referential joint</a>
+            between two elements in the same waycast
             </li>
         </ul>
     </section>
