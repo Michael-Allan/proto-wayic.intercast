@@ -52,7 +52,7 @@ wayic.intercast/doc.task - Documentation in rough
     [ ⤓ minimal
         - necessary form of an intercast network
         * waycast publication
-            - waycast served to the web with a response header of "Access-Control-Allow-Origin: *"
+            - waycast served to the Web with a response header of "Access-Control-Allow-Origin: *"
                 ( cf. http://reluk.ca/project/wayic/lex/#web_serving
                 - for sake of intercast jointing
 
