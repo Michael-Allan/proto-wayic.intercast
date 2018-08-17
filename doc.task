@@ -156,14 +156,14 @@ wayic.intercast/doc.task - Documentation in rough
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Intercast link`
-    ( intercast#intercast_link
+    ( intercast_link
     < intercast link (typology)
         § genetic link
         § intercast joint
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Intercast network`
-    ( intercast#intercast_network
+    ( intercast_network
     - link form: intercast link
     < intercast network (typology)
         § waycaster network
@@ -223,8 +223,8 @@ wayic.intercast/doc.task - Documentation in rough
     - placement
         - in an on-way document
             ( http://reluk.ca/project/wayic/lex/way#on_way
-            - which is the root way declaration document
-                ( http://reluk.ca/project/wayic/cast/root#root_way_declaration_document
+            - which is the waycast root document
+                ( http://reluk.ca/project/wayic/cast/waycast_root_document
                 - or any other document that contains an on-way element
         - thereby easily detectable by processors
 
