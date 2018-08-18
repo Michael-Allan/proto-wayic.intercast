@@ -171,8 +171,9 @@ wayic.intercast/doc.task - Documentation in rough
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Intercast joint`
-    ( intercast#intercast_joint
     < a type of (§) intercast link
+    - a referential joint between waycasts
+        ( http://reluk.ca/project/wayic/script/referential_joint
     - used in
         § waycaster network
         § waybit population
