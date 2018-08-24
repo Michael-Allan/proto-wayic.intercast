@@ -80,7 +80,7 @@ wayic.intercast/doc.task - Documentation in rough
                 - whereby the caster (vote caster = waycaster) formally approves (votes for)
                   the content of the genetic parent and (by transitive vote flow) its ancestors
             - here the vote caster is every waycaster for whom that genetic link is on way
-                ( http://reluk.ca/project/wayic/lex/way#on_way
+                ( http://reluk.ca/project/wayic/script/on_way
                 - warrant
                     - being on way
                         - the waybit is used
@@ -138,8 +138,9 @@ wayic.intercast/doc.task - Documentation in rough
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Intercast commitment declaration`
-    < see also wayic.script § commitment declaration § intracast
-    - the wayscribe cannot, of course, write the declaration into another's waycast
+    - a type of commitment declaration
+        ( http://reluk.ca/project/wayic/script/doc.task § Commitment declaration
+    - one waycaster cannot, of course, write a commitment jointer into another's waycast
     * placement
         - within a special form of variant waybit (patch)
         - one that allows a fine-tuned specification of the exact genetic parent
@@ -192,7 +193,7 @@ wayic.intercast/doc.task - Documentation in rough
              & the parent (referent of *cog:link*)
                 - and/or the content (referent of *href*)
                 - is on way
-                    ( http://reluk.ca/project/wayic/lex/way#on_way
+                    ( http://reluk.ca/project/wayic/script/on_way
                 - so proper to the waycaster
                 ( else it is weird
              & the waycast declares no other variant waybit of the same population
@@ -223,9 +224,9 @@ wayic.intercast/doc.task - Documentation in rough
                     ( § genetic link § referring waybit
     - placement
         - in an on-way document
-            ( http://reluk.ca/project/wayic/lex/way#on_way
-            - which is the waycast root document
-                ( http://reluk.ca/project/wayic/cast/waycast_root_document
+            ( http://reluk.ca/project/wayic/script/on_way
+            - which is the way root document
+                ( http://reluk.ca/project/wayic/cast/way_root_document
                 - or any other document that contains an on-way element
         - thereby easily detectable by processors
 

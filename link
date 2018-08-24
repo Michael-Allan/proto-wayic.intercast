@@ -8,13 +8,6 @@
 
 <section id='link'>
     <h2>     link</h2>
-    <ul>
-        <li>
-            as per
-            <cite><a href='https://en.wiktionary.org/wiki/link'>
-                           https://en.wiktionary.org/wiki/link</a></cite>
-            </li>
-        </ul>
     </section>
 <section id='xrefs' style='border-top:thin solid'>
     <section id='intercast_link'>
