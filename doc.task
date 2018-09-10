@@ -192,7 +192,7 @@ wayic.intercast/doc.task - Documentation in rough
     + form
 
             · <patch [{subjoining waybit reference} PARENT-REF]
-            ·     [cog:population='POPULATION-ID'] [href='CONTENT-REF']>
+            ·     [way:population='POPULATION-ID'] [href='CONTENT-REF']>
             ·     [CONTENT]
             ·     </patch>
 
@@ -201,7 +201,7 @@ wayic.intercast/doc.task - Documentation in rough
             * subjoining waybit reference
                 ( § Genetic link § *join* attribute
             * *population* attribute
-                < cog:population, namespace data:,wayscript.cog
+                < way:population, namespace data:,wayscript
                 - identifies the variant waybit's population
                 - default value: normalized PARENT-REF
         - content, either of:
@@ -279,7 +279,7 @@ wayic.intercast/doc.task - Documentation in rough
             * declaring the population
                 - skip this if the genetic parent is a member of no waybit population
                     - instead letting the population default to PARENT-REF
-                - add to the patch a cog:population attribute of POPULATION-ID
+                - add to the patch a way:population attribute of POPULATION-ID
                   to identify the parent's population
                     - where the value POPULATION-ID is declared in the genetic parent
                         - or inferrable from it
