@@ -199,7 +199,7 @@ wayic.intercast/doc.task - Documentation in rough
         - genetic link attributes
             - at least one of these must be declared
             * subjoining waybit reference
-                ( § Genetic link § *join* attribute
+                ( § Genetic link § subjoining waybit reference
             * *population* attribute
                 < way:population, namespace data:,wayscript
                 - identifies the variant waybit's population
@@ -211,10 +211,13 @@ wayic.intercast/doc.task - Documentation in rough
                     ( § Genetic link § referring waybit
             * *href* attribute
                 < no namespace
-                - a waycast self-bounded reference
-                    ( § Waycast self-bounded reference, 
-                    - thus proper to the waycaster
-                    ( else it is weird
+                - a fragmented, formally infracast reference
+                    ( http://reluk.ca/project/wayic/script/doc.task § Formally infracast reference
+                    - infracast
+                        - thus proper to the waycaster
+                        - thus complying with design constraints
+                            ( http://reluk.ca/project/wayic/script/doc.task
+                                ( § Design constraints § relative referencing bound by the waycast
                 - locates the *referring waybit*
                     ( § Genetic link § referring waybit
     + placement
