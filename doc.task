@@ -92,8 +92,8 @@ wayic.intercast/doc.task - Documentation in rough
             - all genetic links specify a referring waybit
             - the referring waybit is a waybit local to the declaring waycast
         * subjoining waybit reference
-            ( http://reluk.ca/project/wayic/script/doc.task
             - most genetic links specify a subjoining waybit reference
+                ( http://reluk.ca/project/wayic/script/doc.task § Subjoining waybit reference
             - function (*as* a genetic link)
                 - effective only if the referent waybit is a member of the same waybit population
                   as the referring waybit
@@ -123,7 +123,7 @@ wayic.intercast/doc.task - Documentation in rough
                         - nor implies any by its declared form
                         - then it is hereby declared a member (the founding member) of population L
                         - where L is the normalized value of the reference
-                            ( namely the jointer's subjoining waybit reference
+                            ( namely the jointer's *join* attribute, a subjoining waybit reference
         * *patch* element
             ( § q.v.
     - a nominal relation
@@ -153,11 +153,12 @@ wayic.intercast/doc.task - Documentation in rough
 
                   query parameter =  ? as noted [QP] ?;
 
-                  import parameter = "import=", document import reference ;
+                  import parameter = "import=", intercast document reference ;
 
-                      document import reference = waycast reference, '/', dotless relative path ;
+                      intercast document reference =
+                        extracast waycast reference, '/', dotless relative path ;
 
-                          waycast reference = waycast name, { '.', waycast name } ;
+                          extracast waycast reference = waycast name, { '.', waycast name } ;
 
                           dotless relative path = ? a relative-path reference without a dot segment,
                             as per https://tools.ietf.org/html/rfc3986#section-4.2, -3.3 ?;
@@ -190,16 +191,16 @@ wayic.intercast/doc.task - Documentation in rough
             - refers to it, or to something within it
         - detail
             - guard cases
-                - reference invalid if *waycast reference* resolves to the referring waycast
+                - reference invalid if *extracast waycast reference* resolves to the referring waycast
                     ( self import
-                - reference invalid if *document import reference* does not resolve
+                - reference invalid if *intercast document reference* does not resolve
                   to a way declaration document
-            - imports the referent of the *document import reference* as an image
+            - imports the referent of the *intercast document reference* as an image
                 - a (more or less) live copy that stays (roughly) up to date with the original
                 - adding it to the present waycast
             - refers to the document image, or to something within it
         = task to implement in wayic.emacs
-            - fontifying the *waycast reference* to distinguish it from the subsequent path
+            - fontifying the *extracast waycast reference* to distinguish it from the subsequent path
               for sake of clarity
         = task to implement in wayic.read
 
@@ -248,23 +249,26 @@ wayic.intercast/doc.task - Documentation in rough
             ( no matter how remote from the waycast, how deep (indirect) the linkage
             - with that of the variant
         - effective iff:
-             & the parent (referent of the subjoining waybit reference)
-               and/or the content (referent of *href*) is on way
+             & the parent (referent of the *parent* attribute) and/or the content (referent of *href*)
+               is on way
                 ( http://reluk.ca/project/wayic/script/on_way
                 - so proper to the waycaster
                 ( else it is weird
              & the waycast declares no other variant waybit of the same population
     + form
 
-            · <patch [{subjoining waybit reference} PARENT-REF]
+            · <patch [way:parent=PARENT-REF]
             ·     [way:population='POPULATION-ID'] [href='CONTENT-REF']>
             ·     [CONTENT]
             ·     </patch>
 
         - genetic link attributes
             - at least one of these must be declared
-            * subjoining waybit reference
-                ( § Genetic link § subjoining waybit reference
+            * *parent* attribute
+                < way:parent, namespace data:,wayscript
+                - a subjoining waybit reference
+                    ( http://reluk.ca/project/wayic/script/doc.task § Subjoining waybit reference
+                - function: § Genetic link § subjoining waybit reference
             * *population* attribute
                 < way:population, namespace data:,wayscript
                 - identifies the variant waybit's population
@@ -342,8 +346,7 @@ wayic.intercast/doc.task - Documentation in rough
                 - preferably near to the intercast referential jointer that refers (however indirectly)
                   to that extracast waybit
             * declaring the genetic parentage
-                - add to the patch a subjoining waybit reference PARENT-REF
-                  that refers directly to that extracast waybit
+                - add to the patch a *parent* attribute that refers directly to that extracast waybit
             * declaring the population
                 - skip this if the genetic parent is a member of no waybit population
                     - instead letting the population default to PARENT-REF
@@ -373,15 +376,20 @@ wayic.intercast/doc.task - Documentation in rough
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Waycast reference`
-    - referring to an extracast waycast
+    - referring to a waycast
     + reference typology
         * location
-            < a URI
+            - a URI reference
+                ( URI reference, https://tools.ietf.org/html/rfc3986#section-4.1
+            * extracast location
+                - a URI
+                    ( URI, https://tools.ietf.org/html/rfc3986#section-3
             * identifier
-                < a URI in normal form
+                - a URI in normal form
+                    ( Normalization and comparison, https://tools.ietf.org/html/rfc3986#section-6
                 ( cf. project.task § waycast relative references and waycast public locations
         * name
-            ( as per § waycast_names
+            - a *name* from a valid *declaration* of (§) waycast_names
     + waycast_names
         * purpose
             - in wayscript
@@ -397,11 +405,11 @@ wayic.intercast/doc.task - Documentation in rough
 
                   declaration list = declaration | declaration, ',', declaration list ;
 
-                  declaration = name, ': "', URI | name, '"' ;
+                  declaration = name, ': "', location | name, '"' ;
 
                   name = ? string of one or more US-ASCII characters, each a letter or underscore ?;
 
-                  URI = ? as per https://tools.ietf.org/html/rfc3986#section-3 ?;
+                  location = ? as per § reference typology § location ?;
 
         * examples
 
@@ -426,8 +434,8 @@ wayic.intercast/doc.task - Documentation in rough
                 ( see § reference typology §§ name, location
             - for each declaration D
                 - for the name N on its left side
-                    - N binds (whether directly or indirectly) to a URI
-                      on the right side of just one declaration
+                    - N binds (whether directly or indirectly) to a location
+                      on the right side of just one valid declaration
                     - N appears on the left side of no declaration but D
                 - otherwise D is invalid
 
