@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<html xml:lang='en-CA' xmlns='http://www.w3.org/1999/xhtml'>
+    <head>
+        <title>‘import’</title>
+        </head>
+    <body>
+
+
+<section      id='import'>
+    <h2><a href='#import'>
+                  import</a></h2>
+    <ul>
+        <li>
+            (verb) add to a <a href='http://reluk.ca/project/wayic/cast/waycast'>
+            waycast</a> a live copy of an <a href='http://reluk.ca/project/wayic/cast/extracast'>
+            extracast</a> document
+            </li>
+        <li>
+            (noun) an <a href='http://reluk.ca/project/wayic/cast/intracast'>
+            intracast</a> copy of an extracast document that is kept in synchrony with the original,
+            or a part of such a copy
+            </li>
+        </ul>
+    </section>
+
+
+        </body>
+    </html>
