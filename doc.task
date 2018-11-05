@@ -1,147 +1,27 @@
 wayic.intercast/doc.task - Documentation in rough
 
-    - terminology: favouring not graph theory ('vertex', 'edge', etc.)
-        - but the networking terminology of digital telecommunications ('node', 'link')
-          for sake of its [easy] familiarity to the typical reader (IT specialist)
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────────
-    Biological analogues of intercast networking`
-    - intercast networking viewed as a technique of recombinant text †
-        ( q.v. in projects Textbender and Votorola
-
-                  Intercast
-                 networking    Biological analogue †
-          -----------------    --------------------------------
-                        way    individual of a way population
-          waycaster network    way population
-
-                  wayscript    genetic material, genetic coding
-                    waycast    genotype of an individual
-
-                     waybit    gene
-             variant waybit    allele
-          waybit population    alleles at a particular locus
-          waybit population    locus
-                   identity
-
-    † here the biological analogy is expressed at a larger granularity than elsewhere in this document
-        - elsewhere the waybit is analogous to the individual
-            - but here the individual is the way
-            - while the waybits are only its genes
-    - the analogy may be applied further depending on way context
-        - example
-            < http://reluk.ca/project/waycast/way.xht
-            - this way has analogues in the field of evolutionary ecology:
-                * extinction avoidance
-                    - the endmost goal of *endless continuity or full flower*
-                      is analogous to *extinction avoidance*
-                * demographic rescue
-                    - the overall means of securing that continuity
-                      *in the existential refuge of great distances*
-                      is analogous to the mechanism of *demographic rescue* by *dispersal*
-                * evolutionary rescue
-                    - the underlying means of intercast networking *as a technique of recombinant text*
-                      is analogous to the mechanism of *evolutionary rescue*
-                    - the demographic rescue
-                        - being genetically encoded and evolved
-                        - is thereby *also* a case of evolutionary rescue
+    - favouring technological terms such as 'node' and 'link'
+        ( as used in networking, or digital telecommunications engineering
+        < not mathematical terms such as 'vertex' and 'edge'
+            ( as used in graph theory
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Design constraints`
     [ ⤓ minimal
         - the necessary form of an intercast network
         + waycast publication
+            ( addendum to § Publication of a waycast, http://reluk.ca/project/wayic/cast/doc.task
             - waycast served to the Web with a response header of "Access-Control-Allow-Origin: *"
                 ( cf. http://reluk.ca/project/wayic/lex/#web_serving
                 - for sake of intercast referential jointing
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
-    Genetic content`
-    - genetic content is that part of a waybit's content that replicates across genetic links
-      [in order] to form waybit variants
-        - or to maintain them by intracast text flow
-        ( it is important to be selective about this, as in Votorola difference bridging
-    - it excludes:
-        - start and end tags
-        - uniquely personal lines of text
-            ( http://reluk.ca/project/wayic/copy/doc.task
-        - extrabit referents
-            ( viz. of (intrabit) hyperlinks, referential jointers and other referring elements
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────────
-    Genetic link`
-    < a type of (§) intercast link
-    - function
-        - declares a waybit to be a member of a waybit population
-        - structures the waybit population by nominal lines of genetic descent
-        - indicates approval of ancestral waybit content
-            ( Votorola-style transitive vote flow ('delegate cascade') in a recombinant text
-            - each genetic link is formally a vote
-                - whereby the caster (vote caster = waycaster) formally approves (votes for)
-                  the content of the genetic parent and (by transitive vote flow) its ancestors
-            - here the vote caster is every waycaster for whom that genetic link is on way
-                ( http://reluk.ca/project/wayic/script/on_way
-                - warrant
-                    - being on way
-                        - the waybit is used
-                        - and usage implies approval
-                    - to avoid forcing the formation of direct links merely to express the approvals
-                      that are already implied by the indirect link
-    + general form
-        * referring waybit
-            - all genetic links specify a referring waybit
-            - the referring waybit is a waybit local to the declaring waycast
-        * subjoining waybit reference
-            - most genetic links specify a subjoining waybit reference
-                ( http://reluk.ca/project/wayic/script/doc.task § Subjoining waybit reference
-            - function (*as* a genetic link)
-                - effective only if the referent waybit is a member of the same waybit population
-                  as the referring waybit
-                    - otherwise it is a link across a population boundary
-                        - which is instead a phylogenetic link
-                        - declaring the referent population to be a parent population
-                - declares
-                    - the referent waybit to be a genetic parent
-                    - the referring waybit to be its genetic child
-    + particular forms
-        * intercast referential joint
-            ( § q.v.
-            - every intercast referential joint is also a genetic link
-                - a diachronic genealogical relation
-                - distinct from any synchronic genealogical relation of nesting in which
-                    ( http://reluk.ca/project/wayic/script/doc.task § Nesting of waybit elements
-                - here and there, the waybits are also involved
-            - function *as* a genetic link
-                - defines the referring waybit to be the synchronic (infrabutting) child
-                  that is introduced to the (referring) waycast as an effect of the referential joint
-                    ( § Referential jointing § effect § http://reluk.ca/project/wayic/script/doc.task
-                - declares the referring waybit to be a member of the population
-                  of the referent waybit off in the referent waycast
-                    - and a clonal child of the referent waybit
-                - asserts that the referent waybit is a member of a population
-                    - if the referent waybit declares no population itself
-                        - nor implies any by its declared form
-                        - then it is hereby declared a member (the founding member) of population L
-                        - where L is the normalized value of the reference
-                            ( namely the jointer's *join* attribute, a subjoining waybit reference
-        * *patch* element
-            ( § q.v.
-    - a nominal relation
-        - the declared relation is nominal
-            - as opposed to ontic
-            - it does not imply actual generative text flows or editorial influences
-        - rather it implies an *intended* genetics in accord with the practical
-          (e.g. collaborative) purpose of the (§) waybit population
-    - cycles in lines of descent
-        - formally possible, at least by intercast referential jointing
-            ( exactly as in Votorola
-        - the meaning of cycles will vary with the particular function of the link under consideration
-        - the effect will vary with the practical context, and may be blocked in some contexts
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────────
     Import reference`
-    < a type of (wayic.cast §) formally intracast reference
+    < surtype: formally intracast reference
         ( http://reluk.ca/project/wayic/cast/doc.task
+    * purpose
+        - to refer to the import of an extracast way declaration document
+        - to ensure its transport is complete or pending
     * form
         ( [EBN]
 
@@ -153,12 +33,12 @@ wayic.intercast/doc.task - Documentation in rough
 
                   query parameter =  ? as noted [QP] ?;
 
-                  import parameter = "import=", intercast document reference ;
+                  import parameter = "import=", nominally intercast document reference ;
 
-                      intercast document reference =
-                        extracast waycast reference, '/', dotless relative path ;
+                      nominally intercast document reference =
+                        named waycast reference, '/', dotless relative path ;
 
-                          extracast waycast reference = waycast name, { '.', waycast name } ;
+                          named waycast reference = waycast name, { '.', waycast name } ;
 
                           dotless relative path = ? a relative-path reference without a dot segment,
                             as per https://tools.ietf.org/html/rfc3986#section-4.2, -3.3 ?;
@@ -172,9 +52,9 @@ wayic.intercast/doc.task - Documentation in rough
             - the referent here is an element with *id* attribute 'baz'
                 - which element is declared in a way declaration document at path baz/bop.xht
                     - which document is imported from waycast 'bar'
-                        - which name is defined in waycast 'foo'
-                            - which name is defined in the referring waycast
-                            ( see § Waycast reference § waycast_names
+                        - which waycast name is defined in waycast 'foo'
+                            - which waycast name is defined in the referring waycast
+                            ( see § Waycast referencing § waycast_names
     * importer path
         - optional, it may be omitted
             ( as in the example above
@@ -188,107 +68,133 @@ wayic.intercast/doc.task - Documentation in rough
     * function
         - summary
             - imports an extracast way declaration document
-            - refers to it, or to something within it
+            - refers to it, or to one of its elements
         - detail
             - guard cases
-                - reference invalid if *extracast waycast reference* resolves to the referring waycast
+                - reference invalid if *named waycast reference* resolves to the referring waycast
                     ( self import
-                - reference invalid if *intercast document reference* does not resolve
+                - reference invalid if *nominally intercast document reference* does not resolve
                   to a way declaration document
-            - imports the referent of the *intercast document reference* as an image
-                - a (more or less) live copy that stays (roughly) up to date with the original
-                - adding it to the present waycast
-            - refers to the document image, or to something within it
+            - does a referential transport based on the *nominally intercast document reference*
+                ( § Referential transport
+                - the referent being the exported document
+            - refers to the imported document, or to one of its elements
         = task to implement in wayic.emacs
-            - fontifying the *extracast waycast reference* to distinguish it from the subsequent path
+            - fontifying the *named waycast reference* to distinguish it from the subsequent path
               for sake of clarity
         = task to implement in wayic.read
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
-    Intercast commitment declaration`
+    ?redaction Intercast commitment declaration
     - a form of commitment declaration
         ( § Commitment declaration, http://reluk.ca/project/wayic/script/doc.task
     - written into a variant waybit (patch)
         ( the wayscribe cannot, of course, write a commitment jointer into another's waycast
     - it will be a null variant (a clone) if no change other than a commitment declaration (non-genetic)
       is introduced to the patch
-        ( § Genetic content
+        ( http://reluk.ca/project/wayic/origins/doc.task § Genetic content
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Intercast link`
-    ( intercast_link
-    < intercast link (typology)
-        § Genetic link
-        § Intercast referential joint
+    ( ./intercast_link
+    - typology
+        * intercast link
+            * intercast referential joint
+            * genetic bitlink
+                * morphogenetic bitlink
+                ( http://reluk.ca/project/wayic/origins/doc.task
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Intercast network`
-    ( intercast_network
-    - link form: intercast link
-    < intercast network (typology)
-        § Waycaster network
-        § Waybit population
+    ( ./intercast_network
+    - link form: ⋯ intercast link ⋯
+        ( intercast link or composite
+    - typology
+        ( including the name of the link form < LINK > for each type
+        * intercast network
+            < ⋯ intercast link ⋯ >
+            * waycaster network
+                < waycaster-waycast bond — intercast link — waycaster-waycast bond >
+            * intercast way network
+                < intercast referential joint >
+            * bit clade
+                < genetic bitlink >
+                ( http://reluk.ca/project/wayic/origins/doc.task
+            * morphogenetic bit forest
+                < morphogenetic bitlink >
+                ( http://reluk.ca/project/wayic/origins/doc.task
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Intercast referential joint`
-    < a type of (§) intercast link
+    < surtype: intercast link
     - a referential joint between waycasts
-        ( http://reluk.ca/project/wayic/script/referential_joint
-    - used in
-        § Waycaster network
-        § Waybit population
-            < where it doubles as a form of (§) genetic link
+        ( http://reluk.ca/project/wayic/script/doc.task § Referential jointing
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
-    *patch* element`
+    Intercast way network`
+    ( ./intercast_way_network
+    < see also § Intercast way network, http://reluk.ca/project/wayic/origins/doc.task
+    < surtype: intercast network
+    - link form: intercast referential joint
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────────
+    ?redaction *patch* element
+    < surtype: morphogenetic bitlink
+        ( http://reluk.ca/project/wayic/origins/doc.task
     + function
-        - declares a variant waybit
-            - one whose content may differ from other members of the waybit population
-        - declares a (§) genetic link
-        - replaces the content of the genetic parent (if any) wherever in the way model it occurs
+        - to declare a variant waybit
+            - one whose genetic content differs from other members of the waybit population
+                ( http://reluk.ca/project/wayic/origins/genetic_content
+        - declares a genetic link
+        - replaces the content of the original waybit (if any) wherever in the way model it occurs
             ( no matter how remote from the waycast, how deep (indirect) the linkage
             - with that of the variant
         - effective iff:
-             & the parent (referent of the *parent* attribute) and/or the content (referent of *href*)
-               is on way
+             & the original waybit (referent of the *original* attribute)
+               and/or the variant waybit (the content, or referent of *href*) is on way
                 ( http://reluk.ca/project/wayic/script/on_way
                 - so proper to the waycaster
                 ( else it is weird
              & the waycast declares no other variant waybit of the same population
     + form
+        - formal summary in genetic terms
 
-            · <patch [way:parent=PARENT-REF]
-            ·     [way:population='POPULATION-ID'] [href='CONTENT-REF']>
-            ·     [CONTENT]
-            ·     </patch>
+                  original waybit → variant waybit
 
-        - genetic link attributes
-            - at least one of these must be declared
-            * *parent* attribute
-                < way:parent, namespace data:,wayscript
-                - a subjoining waybit reference
-                    ( http://reluk.ca/project/wayic/script/doc.task § Subjoining waybit reference
-                - function: § Genetic link § subjoining waybit reference
-            * *population* attribute
-                < way:population, namespace data:,wayscript
-                - identifies the variant waybit's population
-                - default value: normalized PARENT-REF
-        - content, either of:
-            * inline content
-                - defines a new waybit
-                - declares it to be the *referring waybit*
-                    ( § Genetic link § referring waybit
-            * *href* attribute
-                < no namespace
-                - a fragmented, (§) formally intracast reference
-                    ( http://reluk.ca/project/wayic/cast/doc.task § Formally intracast reference
-                    - intracast
-                        - thus proper to the waycaster
-                        - thus complying with design constraints
-                            ( http://reluk.ca/project/wayic/cast/doc.task
-                                ( § Design constraints § relative referencing bound by the waycast
-                - locates the *referring waybit*
-                    ( § Genetic link § referring waybit
+        - elemental form
+
+                · <patch [way:original=ORIGINAL-REF]
+                ·     [way:population='POPULATION-ID'] [href='VARIANT-REF']>
+                ·     [VARIANT]
+                ·     </patch>
+
+            - genetic attributes
+                - at least one of these must be declared
+                * *original* attribute
+                    < way:original, namespace data:,wayscript
+                    - a subjoining waybit reference
+                        ( http://reluk.ca/project/wayic/script/doc.task § Subjoining waybit reference
+                    - function: § Genetic link § subjoining waybit reference
+                * *population* attribute
+                    < way:population, namespace data:,wayscript
+                    = rename 'locus'
+                        - the genetic connotation is offset by the non-genetic
+                            - and by the (expected) low usage of this attribute
+                        - referring to wayic.origins § Locus
+                    - identifies the variant waybit's population
+                    - default value: normalized ORIGINAL-REF
+            - variant waybit, declared by either of:
+                * inline VARIANT
+                * *href* attribute
+                    < no namespace
+                    - a fragmented, formally intracast reference
+                        ( http://reluk.ca/project/wayic/cast/doc.task § Formally intracast reference
+                        - intracast
+                            - thus proper to the waycaster
+                            - thus complying with design constraints
+                                ( http://reluk.ca/project/wayic/cast/doc.task
+                                    ( § Design constraints § relative referencing bounded by the waycast
+                    - locates and refers to the *variant waybit*
     + placement
         - in an on-way document
             - which is any document that contains an on-way element
@@ -296,9 +202,51 @@ wayic.intercast/doc.task - Documentation in rough
         - thereby easily detectable by processors
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
-    Waybit population`
-    < a type of intercast network
-    - a group of waybits interrelated by nominal lines of descent
+    ?redaction Referential transport
+    = redact ↓
+    = define after other 'referential' §§
+        - perhaps with the help of a term document
+        - considering also ._/transport
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────────
+    ?redaction Transport bit trail
+    < surtype: genetic bitlink
+        ( http://reluk.ca/project/wayic/origins/doc.task
+    - each imported waybit, if on way, is thereby ...
+        ( on way, that is, in the importing waycast
+    - form
+        - formal summary in genetic terms
+
+                  exported waybit → imported waybit
+
+        - elemental form
+
+                  . . .
+
+  —— SALVAGE ——
+    + as a genetic link
+        - salvaged from § Intercast referential joint
+        * function
+            ( as a genetic link
+            - defines the referent waybit to be the synchronic (infrabutting) child
+              that is introduced to the (referring) waycast as an effect of the referential joint
+                ( http://reluk.ca/project/wayic/script/doc.task § Referential jointing § effect
+                = correct to imported image
+            - declares the referring waybit to be a member of the population
+              of the referent waybit off in the referent waycast
+                - and a clonal child of the referent waybit
+            - asserts that the referent waybit is a member of a population
+                - if the referent waybit declares no population itself
+                    - nor implies any by its declared form
+                    - then it is hereby declared a member (the founding member) of population L
+                    - where L is the normalized value of the reference
+                        ( namely the jointer's *join* attribute, a subjoining waybit reference
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────────
+    ?redaction Population
+    < surtype: intercast network
+    - a population is a group of waybits interrelated by nominal lines of descent
+    - every on way waybit is a member of a population of positive size
     - purpose
         - competitive and collaborative way definition among waycasters
             ( akin to recombinant text in Textbender and Votorola
@@ -325,7 +273,7 @@ wayic.intercast/doc.task - Documentation in rough
                         - and possibly other attributes
                             ( as per § subsurface variation
         + shallow variation
-            - subsurface variation (§) of an intercast referential jointer's referent
+            - subsurface variation of an intercast referential jointer's referent
             - form, either of
                 | generalized subsurface variant
                     ( § subsurface variation
@@ -338,26 +286,27 @@ wayic.intercast/doc.task - Documentation in rough
             ( generalized form
             - changing the content of an extracast waybit that is reachable
               by intercast referential jointing
-                - at any depth in the waycaster network
+                - at any depth in the intercast way network
                 - by making a variant of it
-            - that extracast waybit will become the nominal genetic parent of your newly made variant
+/           - that extracast waybit will become the nominal genetic parent of your newly made variant
             - make an empty *patch* element
                 ( § *patch* element
                 - preferably near to the intercast referential jointer that refers (however indirectly)
                   to that extracast waybit
-            * declaring the genetic parentage
-                - add to the patch a *parent* attribute that refers directly to that extracast waybit
+            * declaring the original waybit
+                - add to the patch a *original* attribute that refers directly to that extracast waybit
             * declaring the population
-                - skip this if the genetic parent is a member of no waybit population
-                    - instead letting the population default to PARENT-REF
+                - skip this if the original waybit is a member of no waybit population
+                    - instead letting the population default to ORIGINAL-REF
                 - add to the patch a way:population attribute of POPULATION-ID
-                  to identify the parent's population
-                    - where the value POPULATION-ID is declared in the genetic parent
+                  to identify the original waybit's population
+                    - where the value POPULATION-ID is declared in the original waybit
                         - or inferrable from it
                         ( typically a tool will tell you the value
             * declaring the variant content
-                - copy the (§) genetic content of the parent
+                - copy the genetic content of the original waybit
                     - typically you would use a tool to extract only the genetic portion
+                    ( http://reluk.ca/project/wayic/origins/doc.task § Genetic content
                 - paste it
                     - either in the *patch* element
                     - or elsewhere, referring to it by adding an *href* attribute
@@ -370,26 +319,30 @@ wayic.intercast/doc.task - Documentation in rough
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Waycaster network`
-    ( a type of intercast network
-    - purpose: collaborative way definition among waycasters
-    - link form: intercast referential joint
+    < surtype: intercast network
+    - link form: waycaster-waycast bond — intercast link — waycaster-waycast bond
+        - waycaster-waycast bond: the one-to-one relation between waycaster and waycast
+    - purpose
+        - structural support for a community of waycasters
+        - collaborative way definition among waycasters
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
-    Waycast reference`
+    ?redaction Waycast referencing
     - referring to a waycast
     + reference typology
-        * location
+        * waycast location
             - a URI reference
                 ( URI reference, https://tools.ietf.org/html/rfc3986#section-4.1
-            * extracast location
+            * extracast waycast location
                 - a URI
                     ( URI, https://tools.ietf.org/html/rfc3986#section-3
-            * identifier
+            * waycast public identifier
                 - a URI in normal form
                     ( Normalization and comparison, https://tools.ietf.org/html/rfc3986#section-6
-                ( cf. project.task § waycast relative references and waycast public locations
-        * name
-            - a *name* from a valid *declaration* of (§) waycast_names
+                < as per wayic.cast § Publication of a waycast § waycast public identifier
+                    ( http://reluk.ca/project/wayic/cast/doc.task
+        * waycast name
+            - a *waycast name* from a valid *declaration* of waycast_names
     + waycast_names
         * purpose
             - in wayscript
@@ -405,11 +358,12 @@ wayic.intercast/doc.task - Documentation in rough
 
                   declaration list = declaration | declaration, ',', declaration list ;
 
-                  declaration = name, ': "', location | name, '"' ;
+                  declaration = waycast name, ': "', waycast location | waycast name, '"' ;
 
-                  name = ? string of one or more US-ASCII characters, each a letter or underscore ?;
+                  waycast name = ? string of one or more US-ASCII characters,
+                    each a letter or underscore ?;
 
-                  location = ? as per § reference typology § location ?;
+                  waycast location = ? as per § reference typology § waycast location ?;
 
         * examples
 
@@ -430,18 +384,23 @@ wayic.intercast/doc.task - Documentation in rough
                       means: "http://bar.com/cast/" }
 
         * function
-            - to declare waycast name bindings, each name binding to a location
-                ( see § reference typology §§ name, location
-            - for each declaration D
-                - for the name N on its left side
-                    - N binds (whether directly or indirectly) to a location
-                      on the right side of just one valid declaration
-                    - N appears on the left side of no declaration but D
+            - to bind waycast names to locations
+                ( see § reference typology §§ waycast name, waycast location
+            - for each *declaration* D
+                - for the *waycast name* N on its left side
+                    - N binds (whether directly or indirectly) to a *waycast location*
+                      on the right side of just one valid *declaration*
+                    - N appears on the left side of no *declaration* but D
                 - otherwise D is invalid
 
 
-    ════════════════════════════════════════════════════════════════════════════════════════════════════
-    Notes`
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+// N o t e s
+/
+    [EBN]  Extended Backus-Naur syntax notation, ISO/IEC 14977.
+            ( http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html
+            ( https://www.cl.cam.ac.uk/~mgk25/iso-14977.pdf
+            ( summary, https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form
 
     [QP] · Query parameter: an ampersand delimited name-value tuple in the query component
            of a URI reference, as defined for content type *application/x-www-form-urlencoded*.
@@ -449,10 +408,6 @@ wayic.intercast/doc.task - Documentation in rough
                 ( https://url.spec.whatwg.org/#urlencoded-parsing
             ( query, https://tools.ietf.org/html/rfc3986#section-3.4
 
-    [EBN]  Extended Backus-Naur syntax notation, ISO/IEC 14977.
-            ( http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html
-            ( https://www.cl.cam.ac.uk/~mgk25/iso-14977.pdf
-            ( summary, https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form
 
 
                                           Copyright © 2018 Michael Allan and contributors.  Licence MIT.
