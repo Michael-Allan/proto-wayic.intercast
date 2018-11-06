@@ -6,6 +6,27 @@ wayic.intercast/doc.task - Documentation in rough
             ( as used in graph theory
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
+    Commitment patching`
+    - commitment declaration by means of patching
+        ( commitment declaration, http://reluk.ca/project/wayic/script/doc.task
+    - purpose
+        - to declare an intent to act on a way part of extracast origin
+            - viz. to act on a way part *as* formalized by an extracast waybit
+                - or to act on a variant of it
+        - namely to declare an *intercast commitment declaration*
+    - method
+        - write a commitment jointer into the *variant waybit* of a patch
+            ( commitment jointer, http://reluk.ca/project/wayic/script/doc.task
+        - if the variant waybit varies nowhere else
+            - or at least in no genetic content
+                ( http://reluk.ca/project/wayic/origins/doc.task
+            - then actually it will be a clone
+                ( http://reluk.ca/project/wayic/origins/clone
+    - rationale
+        - one cannot, of course, write a commitment jointer into another's waycast
+            - hence this method
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────────
     Design constraints`
     [ ⤓ minimal
         - the necessary form of an intercast network
@@ -83,16 +104,6 @@ wayic.intercast/doc.task - Documentation in rough
             - fontifying the *named waycast reference* to distinguish it from the subsequent path
               for sake of clarity
         = task to implement in wayic.read
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────────
-    ?redaction Intercast commitment declaration
-    - a form of commitment declaration
-        ( § Commitment declaration, http://reluk.ca/project/wayic/script/doc.task
-    - written into a variant waybit (patch)
-        ( the wayscribe cannot, of course, write a commitment jointer into another's waycast
-    - it will be a null variant (a clone) if no change other than a commitment declaration (non-genetic)
-      is introduced to the patch
-        ( http://reluk.ca/project/wayic/origins/doc.task § Genetic content
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Intercast link`
@@ -175,6 +186,9 @@ wayic.intercast/doc.task - Documentation in rough
                     - a subjoining waybit reference
                         ( http://reluk.ca/project/wayic/script/doc.task § Subjoining waybit reference
                     - function: § Genetic link § subjoining waybit reference
+                    - unless this is constrained to an import reference
+                        = correct § Intercast commitment declaration
+                            - which assumes so
                 * *population* attribute
                     < way:population, namespace data:,wayscript
                     = rename 'locus'
@@ -200,6 +214,10 @@ wayic.intercast/doc.task - Documentation in rough
             - which is any document that contains an on-way element
             ( http://reluk.ca/project/wayic/script/on_way
         - thereby easily detectable by processors
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────────
+    Intercast commitment declaration`
+    - a commitment declaration introduced by commitment patching
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     ?redaction Referential transport
