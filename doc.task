@@ -38,11 +38,14 @@ wayic.intercast/doc.task - Documentation in rough
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Import reference`
-    < surtype: formally intracast reference
-        ( http://reluk.ca/project/wayic/cast/doc.task
     * purpose
         - to refer to the import of an extracast way declaration document
         - to ensure its transport is complete or pending
+    * classification
+        - while formally intracast
+            ( http://reluk.ca/project/wayic/cast/doc.task § Formally intracast reference
+            - an import reference is functionally both inter and intracast
+                ( § function
     * form
         ( [EBN]
 
@@ -98,7 +101,10 @@ wayic.intercast/doc.task - Documentation in rough
                   to a way declaration document
             - does a referential transport based on the *nominally intercast document reference*
                 ( § Referential transport
-                - the referent being the exported document
+                - the referent being the "exported document" for this purpose
+                    ( ./export
+                - the result being the "imported document"
+                    ( ./import
             - refers to the imported document, or to one of its elements
         = task to implement in wayic.emacs
             - fontifying the *named waycast reference* to distinguish it from the subsequent path
@@ -110,10 +116,14 @@ wayic.intercast/doc.task - Documentation in rough
     ( ./intercast_link
     - typology
         * intercast link
-            * intercast referential joint
+            * referential joint
+                ( [IR], http://reluk.ca/project/wayic/script/doc.task
             * genetic bitlink
+                ( [IR], http://reluk.ca/project/wayic/origins/doc.task
+                * transport bit trail
                 * morphogenetic bitlink
-                ( http://reluk.ca/project/wayic/origins/doc.task
+                    ( [IR], http://reluk.ca/project/wayic/origins/doc.task
+            † only if based on an import reference
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Intercast network`
@@ -127,7 +137,7 @@ wayic.intercast/doc.task - Documentation in rough
             * waycaster network
                 < waycaster-waycast bond — intercast link — waycaster-waycast bond >
             * intercast way network
-                < intercast referential joint >
+                < referential joint >
             * bit clade
                 < genetic bitlink >
                 ( http://reluk.ca/project/wayic/origins/doc.task
@@ -136,17 +146,11 @@ wayic.intercast/doc.task - Documentation in rough
                 ( http://reluk.ca/project/wayic/origins/doc.task
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
-    Intercast referential joint`
-    < surtype: intercast link
-    - a referential joint between waycasts
-        ( http://reluk.ca/project/wayic/script/doc.task § Referential jointing
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────────
     Intercast way network`
     ( ./intercast_way_network
     < see also § Intercast way network, http://reluk.ca/project/wayic/origins/doc.task
     < surtype: intercast network
-    - link form: intercast referential joint
+    - link form: referential joint
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     ?redaction *patch* element
@@ -243,7 +247,7 @@ wayic.intercast/doc.task - Documentation in rough
 
   —— SALVAGE ——
     + as a genetic link
-        - salvaged from § Intercast referential joint
+        - salvaged from removed § Intercast referential joint
         * function
             ( as a genetic link
             - defines the referent waybit to be the synchronic (infrabutting) child
@@ -415,13 +419,15 @@ wayic.intercast/doc.task - Documentation in rough
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 // N o t e s
 /
-    [EBN]  Extended Backus-Naur syntax notation, ISO/IEC 14977.
+   [EBN]  Extended Backus-Naur syntax notation, ISO/IEC 14977.
             ( http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html
             ( https://www.cl.cam.ac.uk/~mgk25/iso-14977.pdf
             ( summary, https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form
 
-    [QP] · Query parameter: an ampersand delimited name-value tuple in the query component
-           of a URI reference, as defined for content type *application/x-www-form-urlencoded*.
+   [IR] · Applies only for those instances which are based on an import reference.
+
+   [QP] · Query parameter: an ampersand delimited name-value tuple in the query component
+          of a URI reference, as defined for content type *application/x-www-form-urlencoded*.
             ( *application/x-www-form-urlencoded* parsing
                 ( https://url.spec.whatwg.org/#urlencoded-parsing
             ( query, https://tools.ietf.org/html/rfc3986#section-3.4
