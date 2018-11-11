@@ -149,7 +149,11 @@ wayic.intercast/doc.task - Documentation in rough
     ( ./intercast_way_network
     < see also § Intercast way network, http://reluk.ca/project/wayic/origins/doc.task
     < surtype: intercast network
-    - link form: referential joint
+    + form
+        - a group of ways interrelated through their waycasts by referential jointing
+            ( referential jointing, http://reluk.ca/project/wayic/script/doc.task
+    + function
+        - collaborative way formation and declaration among waycasters
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     ?redaction *patch* element
@@ -262,81 +266,6 @@ wayic.intercast/doc.task - Documentation in rough
                     - then it is hereby declared a member (the founding member) of population L
                     - where L is the normalized value of the reference
                         ( namely the jointer's *join* attribute, a subjoining waybit reference
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────────
-    ?redaction Population
-    < surtype: intercast network
-    - a population is a group of waybits interrelated by nominal lines of descent
-    - every on way waybit is a member of a population of positive size
-    - purpose
-        - competitive and collaborative way definition among waycasters
-            ( akin to recombinant text in Textbender and Votorola
-        - efficient editorial search among variant waybits
-        - formation of way consensus
-            ( akin to a Votorola poll
-    - network link form: genetic link
-    - identifier
-        - subjoining waybit reference
-        - only because "most genetic links" so refer to it
-            ( § Genetic link § general form
-            - otherwise it could be a free form string
-    [ typical practice
-        + surface variation
-            - pasting the variant content directly in line, no referential jointing
-            = write this
-                - situation
-                    - you already have waybit
-                    - you want to declare it to be a variant waybit
-                - method
-                    - an empty *patch* element
-                        - typically placed within the waybit
-                        - with an *href* attribute referencing the waybit
-                        - and possibly other attributes
-                            ( as per § subsurface variation
-        + shallow variation
-            - subsurface variation of an intercast referential jointer's referent
-            - form, either of
-                | generalized subsurface variant
-                    ( § subsurface variation
-                | surface variant
-                    = write this
-                        - replacing the referential jointer with a surface variant
-                            ( § surface variation
-                        - it ends up formed as such
-        + subsurface variation
-            ( generalized form
-            - changing the content of an extracast waybit that is reachable
-              by intercast referential jointing
-                - at any depth in the intercast way network
-                - by making a variant of it
-/           - that extracast waybit will become the nominal genetic parent of your newly made variant
-            - make an empty *patch* element
-                ( § *patch* element
-                - preferably near to the intercast referential jointer that refers (however indirectly)
-                  to that extracast waybit
-            * declaring the original waybit
-                - add to the patch a *original* attribute that refers directly to that extracast waybit
-            * declaring the population
-                - skip this if the original waybit is a member of no waybit population
-                    - instead letting the population default to ORIGINAL-REF
-                - add to the patch a way:population attribute of POPULATION-ID
-                  to identify the original waybit's population
-                    - where the value POPULATION-ID is declared in the original waybit
-                        - or inferrable from it
-                        ( typically a tool will tell you the value
-            * declaring the variant content
-                - copy the genetic content of the original waybit
-                    - typically you would use a tool to extract only the genetic portion
-                    ( http://reluk.ca/project/wayic/origins/doc.task § Genetic content
-                - paste it
-                    - either in the *patch* element
-                    - or elsewhere, referring to it by adding an *href* attribute
-                - edit the pasted content to introduce the actual variation
-        + delegation to another waycaster
-            - the other waycaster has declared a variant of your waybit, which you like
-            - you no longer want to maintain this waybit yourself
-            - replace it with an intercast referential joint direct to the variant
-              and let the other waycaster maintain it
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Waycaster network`
