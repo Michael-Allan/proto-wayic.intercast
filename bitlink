@@ -16,7 +16,18 @@
             </li>
         </ul>
     </section>
+<section id='xrefs' style='border-top:thin solid'>
+    <section id=                                      'recombinant_bitlink'>
+        <a href='http://reluk.ca/project/wayic/origins/recombinant_bitlink#recombinant_bitlink'
+          rel='content-repository'>content</a>
+        </section>
+    <section id=                                      'stemmatic_bitlink'>
+        <a href='http://reluk.ca/project/wayic/origins/stemmatic_bitlink#stemmatic_bitlink'
+          rel='content-repository'>content</a>
+        </section>
+    </section>
 
 
+        <script src='http://reluk.ca/project/wayic/lex/_/reader.js'/>
         </body>
     </html>
