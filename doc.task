@@ -6,22 +6,16 @@ wayic.intercast/doc.task - Documentation in rough
             ( as used in graph theory
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
-    Commitment patching`
-    - commitment declaration by means of patching
+    Commitment stemmaplasty`
+    - stemmaplasty for the purpose of commitment declaration
+        ( stemmaplasty, http://reluk.ca/project/wayic/origins/doc.task
         ( commitment declaration, http://reluk.ca/project/wayic/script/doc.task
     - purpose
-        - to declare an intent to act on a way part of extracast origin
-            - viz. to act on a way part *as* formalized by an extracast waybit
-                - or to act on a variant of it
-        - namely to declare an *intercast commitment declaration*
+        - to declare an intent to act on a way part as formalized by an extracast waybit
     - method
-        - write a commitment jointer into the *variant waybit* of a patch
+        - write a commitment jointer into a stemmaplastic clone
             ( commitment jointer, http://reluk.ca/project/wayic/script/doc.task
-        - if the variant waybit varies nowhere else
-            - or at least in no genetic content
-                ( http://reluk.ca/project/wayic/origins/doc.task
-            - then actually it will be a clone
-                ( http://reluk.ca/project/wayic/origins/clone
+            ( http://reluk.ca/project/wayic/origins/clone
     - rationale
         - one cannot, of course, write a commitment jointer into another's waycast
             - hence this method
@@ -38,36 +32,34 @@ wayic.intercast/doc.task - Documentation in rough
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Import reference`
-    * purpose
-        - to refer to the import of an extracast way declaration document
-        - to ensure its transport is complete or pending
-    * classification
-        - while formally intracast
-            ( http://reluk.ca/project/wayic/cast/doc.task § Formally intracast reference
-            - an import reference is functionally both inter and intracast
-                ( § function
+    < surtype: formally intracast reference
+        ( http://reluk.ca/project/wayic/cast/doc.task
+        ( yet functionally both inter and intracast, as per § function
     * form
         ( [EBN]
 
           import reference = [ importer path ], '?', import query, [ '#', fragment ] ;
 
-              importer path = "/way.xht" ;
+              importer path = '/way.xht' ;
 
               import query = { query parameter, '&' }, import parameter, { '&', query parameter } ;
 
                   query parameter =  ? as noted [QP] ?;
 
-                  import parameter = "import=", nominally intercast document reference ;
+                  import parameter = 'import=', nominally intercast document reference ;
 
                       nominally intercast document reference =
                         named waycast reference, '/', dotless relative path ;
 
                           named waycast reference = waycast name, { '.', waycast name } ;
 
-                          dotless relative path = ? a relative-path reference without a dot segment,
-                            as per https://tools.ietf.org/html/rfc3986#section-4.2, -3.3 ?;
+                          dotless relative path = ? a relative path reference without a dot segment, as
+                            per https://tools.ietf.org/html/rfc3986#section-3.3 (dot-segment)
+                            and https://tools.ietf.org/html/rfc3986#section-4.2 (relative-path) ?;
 
               fragment = ? as per https://tools.ietf.org/html/rfc3986#section-3.5 ?;
+
+          import reference with fragment = [ importer path ], '?', import query, '#', fragment ;
 
     * example
 
@@ -89,9 +81,13 @@ wayic.intercast/doc.task - Documentation in rough
         - its purpose is to fix the effective location of the imported document
             - e.g. as it appears in a browser's address bar
             - for sake of simplicity, clarity and processing efficiency
+    * resolution
+        - the fragment is resolved as an extended element reference
+            ( http://reluk.ca/project/wayic/script/doc.task
     * function
         - summary
             - imports an extracast way declaration document
+                - ensuring its transport is complete or pending
             - refers to it, or to one of its elements
         - detail
             - guard cases
@@ -114,14 +110,17 @@ wayic.intercast/doc.task - Documentation in rough
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Intercast link`
     ( ./intercast_link
+    - formation
+        * stemmaplasty
+            ( [IR], http://reluk.ca/project/wayic/origins/doc.task
     - typology
         * intercast link
             * referential joint
                 ( [IR], http://reluk.ca/project/wayic/script/doc.task
-            * genetic bitlink
+            * stemmatic bitlink
                 ( [IR], http://reluk.ca/project/wayic/origins/doc.task
                 * transport bit trail
-                * morphogenetic bitlink
+                * recombinant bitlink
                     ( [IR], http://reluk.ca/project/wayic/origins/doc.task
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -137,11 +136,11 @@ wayic.intercast/doc.task - Documentation in rough
                 < waycaster-waycast bond — intercast link — waycaster-waycast bond >
             * intercast way network
                 < referential joint >
-            * bit clade
-                < genetic bitlink >
+            * stemma
+                < stemmatic bitlink >
                 ( http://reluk.ca/project/wayic/origins/doc.task
-            * morphogenetic bit forest
-                < morphogenetic bitlink >
+            * recombit forest
+                < recombinant bitlink >
                 ( http://reluk.ca/project/wayic/origins/doc.task
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -149,82 +148,11 @@ wayic.intercast/doc.task - Documentation in rough
     ( ./intercast_way_network
     < see also § Intercast way network, http://reluk.ca/project/wayic/origins/doc.task
     < surtype: intercast network
-    + form
+    - form
         - a group of ways interrelated through their waycasts by referential jointing
             ( referential jointing, http://reluk.ca/project/wayic/script/doc.task
-    + function
+    - function
         - collaborative way formation and declaration among waycasters
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────────
-    ?redaction *patch* element
-    < surtype: morphogenetic bitlink
-        ( http://reluk.ca/project/wayic/origins/doc.task
-    + function
-        - to declare a variant waybit
-            - one whose genetic content differs from other members of the waybit population
-                ( http://reluk.ca/project/wayic/origins/genetic_content
-        - declares a genetic link
-        - replaces the content of the original waybit (if any) wherever in the way model it occurs
-            ( no matter how remote from the waycast, how deep (indirect) the linkage
-            - with that of the variant
-        - effective iff:
-             & the original waybit (referent of the *original* attribute)
-               and/or the variant waybit (the content, or referent of *href*) is on way
-                ( http://reluk.ca/project/wayic/script/on_way
-                - so proper to the waycaster
-                ( else it is weird
-             & the waycast declares no other variant waybit of the same population
-    + form
-        - formal summary in genetic terms
-
-                  original waybit → variant waybit
-
-        - elemental form
-
-                · <patch [way:original=ORIGINAL-REF]
-                ·     [way:population='POPULATION-ID'] [href='VARIANT-REF']>
-                ·     [VARIANT]
-                ·     </patch>
-
-            - genetic attributes
-                - at least one of these must be declared
-                * *original* attribute
-                    < way:original, namespace data:,wayscript
-                    - a subjoining waybit reference
-                        ( http://reluk.ca/project/wayic/script/doc.task § Subjoining waybit reference
-                    - function: § Genetic link § subjoining waybit reference
-                    - unless this is constrained to an import reference
-                        = correct § Intercast commitment declaration
-                            - which assumes so
-                * *population* attribute
-                    < way:population, namespace data:,wayscript
-                    = rename 'locus'
-                        - the genetic connotation is offset by the non-genetic
-                            - and by the (expected) low usage of this attribute
-                        - referring to wayic.origins § Locus
-                    - identifies the variant waybit's population
-                    - default value: normalized ORIGINAL-REF
-            - variant waybit, declared by either of:
-                * inline VARIANT
-                * *href* attribute
-                    < no namespace
-                    - a fragmented, formally intracast reference
-                        ( http://reluk.ca/project/wayic/cast/doc.task § Formally intracast reference
-                        - intracast
-                            - thus proper to the waycaster
-                            - thus complying with design constraints
-                                ( http://reluk.ca/project/wayic/cast/doc.task
-                                    ( § Design constraints § relative referencing bounded by the waycast
-                    - locates and refers to the *variant waybit*
-    + placement
-        - in an on-way document
-            - which is any document that contains an on-way element
-            ( http://reluk.ca/project/wayic/script/on_way
-        - thereby easily detectable by processors
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────────
-    Intercast commitment declaration`
-    - a commitment declaration introduced by commitment patching
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     ?redaction Referential transport
@@ -235,7 +163,7 @@ wayic.intercast/doc.task - Documentation in rough
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     ?redaction Transport bit trail
-    < surtype: genetic bitlink
+    < surtype: stemmatic bitlink
         ( http://reluk.ca/project/wayic/origins/doc.task
     - each imported waybit, if on way, is thereby ...
         ( on way, that is, in the importing waycast
@@ -302,7 +230,7 @@ wayic.intercast/doc.task - Documentation in rough
             - waycast.json
                 ( http://reluk.ca/project/wayic/cast/doc.task § Configuration of a waycast
         * form
-            ( [EBN], exclusive of the whitespacing variations allowed by JSON
+            ( [EBN], exclusive of whitespacing variations allowed by JSON
 
               'waycast_names: {', [ declaration list ], '}' ;
 
@@ -334,7 +262,7 @@ wayic.intercast/doc.task - Documentation in rough
                       means: "http://bar.com/cast/" }
 
         * function
-            - to bind waycast names to locations
+            - binds waycast names to locations
                 ( see § reference typology §§ waycast name, waycast location
             - for each *declaration* D
                 - for the *waycast name* N on its left side
