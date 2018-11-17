@@ -8,14 +8,11 @@ wayic.intercast/doc.task - Documentation in rough
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Commitment stemmaplasty`
     - stemmaplasty for the purpose of commitment declaration
-        ( stemmaplasty, http://reluk.ca/project/wayic/origins/doc.task
-        ( commitment declaration, http://reluk.ca/project/wayic/script/doc.task
+        ( http://reluk.ca/project/wayic/script/doc.task § Commitment declaration
     - purpose
         - to declare an intent to act on a way part as formalized by an extracast waybit
     - method
         - write a commitment jointer into a stemmaplastic clone
-            ( commitment jointer, http://reluk.ca/project/wayic/script/doc.task
-            ( http://reluk.ca/project/wayic/origins/clone
     - rationale
         - one cannot, of course, write a commitment jointer into another's waycast
             - hence this method
@@ -112,16 +109,16 @@ wayic.intercast/doc.task - Documentation in rough
     ( ./intercast_link
     - formation
         * stemmaplasty
-            ( [IR], http://reluk.ca/project/wayic/origins/doc.task
+            ( [IR]
     - typology
         * intercast link
             * referential joint
-                ( [IR], http://reluk.ca/project/wayic/script/doc.task
+                ( [IR]
             * stemmatic bitlink
-                ( [IR], http://reluk.ca/project/wayic/origins/doc.task
+                ( [IR]
                 * transport bit trail
                 * recombinant bitlink
-                    ( [IR], http://reluk.ca/project/wayic/origins/doc.task
+                    ( [IR]
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Intercast network`
@@ -138,10 +135,8 @@ wayic.intercast/doc.task - Documentation in rough
                 < referential joint >
             * bit stemma
                 < stemmatic bitlink >
-                ( http://reluk.ca/project/wayic/origins/doc.task
             * recombit forest
                 < recombinant bitlink >
-                ( http://reluk.ca/project/wayic/origins/doc.task
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Intercast way network`
@@ -150,7 +145,6 @@ wayic.intercast/doc.task - Documentation in rough
     < surtype: intercast network
     - form
         - a group of ways interrelated through their waycasts by referential jointing
-            ( referential jointing, http://reluk.ca/project/wayic/script/doc.task
     - function
         - collaborative formation and declaration of ways
 
@@ -164,7 +158,6 @@ wayic.intercast/doc.task - Documentation in rough
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     ?redaction Transport bit trail
     < surtype: stemmatic bitlink
-        ( http://reluk.ca/project/wayic/origins/doc.task
     - each imported waybit, if on way, is thereby ...
         ( on way, that is, in the importing waycast
     - form
