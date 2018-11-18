@@ -119,6 +119,8 @@ wayic.intercast/doc.task - Documentation in rough
                 * transport bit trail
                 * recombinant bitlink
                     ( [IR]
+    - function
+        - forms an intercast network
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Intercast network`
@@ -131,22 +133,12 @@ wayic.intercast/doc.task - Documentation in rough
             < ⋯ intercast link ⋯ >
             * waycaster network
                 < waycaster-waycast bond — intercast link — waycaster-waycast bond >
-            * intercast way network
+            * way population
                 < referential joint >
             * bit stemma
                 < stemmatic bitlink >
             * recombit forest
                 < recombinant bitlink >
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────────
-    Intercast way network`
-    ( ./intercast_way_network
-    < see also § Intercast way network, http://reluk.ca/project/wayic/origins/doc.task
-    < surtype: intercast network
-    - form
-        - a group of ways interrelated through their waycasts by referential jointing
-    - function
-        - collaborative formation and declaration of ways
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     ?redaction Referential transport
@@ -169,6 +161,8 @@ wayic.intercast/doc.task - Documentation in rough
 
                   . . .
 
+    - function
+        - forms a waycaster network
   —— SALVAGE ——
     + as a genetic link
         - salvaged from removed § Intercast referential joint
@@ -190,12 +184,14 @@ wayic.intercast/doc.task - Documentation in rough
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Waycaster network`
+    ( ./waycaster_network
     < surtype: intercast network
     - link form: waycaster-waycast bond — intercast link — waycaster-waycast bond
         - waycaster-waycast bond: the one-to-one relation between waycaster and waycast
-    - purpose
-        - structural support for a community of waycasters
-        - collaborative way definition among waycasters
+    - function
+        - affords structural support for a community of waycasters
+        - facilitates the collaborative formation and declaration of ways
+        - aids the evolution of waykinds
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     ?redaction Waycast referencing
