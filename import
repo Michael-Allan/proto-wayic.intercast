@@ -11,14 +11,14 @@
                   import</a></h2>
     <ul>
         <li>
-            (verb) add to a <a href='http://reluk.ca/project/wayic/cast/waycast'>
-            waycast</a> a live copy of an <a href='http://reluk.ca/project/wayic/cast/extracast'>
-            extracast</a> document
+            (noun) an <a href='http://reluk.ca/project/wayic/cast/intracast'>
+            intracast</a> copy of <a href='http://reluk.ca/project/wayic/cast/extracast'>
+            extracast</a> <a href='http://reluk.ca/project/wayic/script/wayscript'>
+            wayscript</a> that is kept in synchrony with the original
             </li>
         <li>
-            (noun) an <a href='http://reluk.ca/project/wayic/cast/intracast'>
-            intracast</a> copy of an extracast document that is kept in synchrony with the original,
-            or a part of such a copy
+            (verb) add an import to a <a href='http://reluk.ca/project/wayic/cast/waycast'>
+            waycast</a>
             </li>
         </ul>
     </section>
