@@ -1,8 +1,8 @@
 wayic.intercast/doc.task - Documentation in rough
 
-    - favouring technological terms such as 'node' and 'link'
-        ( as used in networking, or digital telecommunications engineering
-        < not mathematical terms such as 'vertex' and 'edge'
+    - favouring technological terms such as 'network', 'node' and 'link'
+        ( as used in communications engineering
+        - not mathematical terms such as 'graph', 'vertex' and 'edge'
             ( as used in graph theory
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
