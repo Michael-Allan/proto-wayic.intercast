@@ -121,24 +121,23 @@ wayic.intercast/doc.task - Documentation in rough
                     ( [IR]
     - function
         - forms an intercast network
+        - forms a waycaster interlink
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Intercast network`
     ( ./intercast_network
-    - link form: ⋯ intercast link ⋯
-        ( intercast link or composite
     - typology
         ( including the name of the link form < LINK > for each type
         * intercast network
             < ⋯ intercast link ⋯ >
-            * waycaster network
-                < waycaster-waycast bond — intercast link — waycaster-waycast bond >
             * way population
                 < referential joint >
             * bit stemma
                 < stemmatic bitlink >
             * recombit forest
                 < recombinant bitlink >
+    - function
+        - forms a waycaster network
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     ?redaction Referential transport
@@ -183,14 +182,22 @@ wayic.intercast/doc.task - Documentation in rough
                         ( namely the jointer's *join* attribute, a subjoining waybit reference
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
+    Waycaster interlink`
+    ( ./waycaster_interlink
+    + form
+        - waycaster-waycast bond — intercast link — waycaster-waycast bond
+            ( the bond being the one-to-one relation between waycaster and waycast
+    + function
+        - forms a waycaster network
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────────
     Waycaster network`
     ( ./waycaster_network
-    < surtype: intercast network
-    - link form: waycaster-waycast bond — intercast link — waycaster-waycast bond
-        - waycaster-waycast bond: the one-to-one relation between waycaster and waycast
-    - function
-        - affords structural support for a community of waycasters
-        - facilitates the collaborative formation and declaration of ways
+    + form
+        - intercast network + waycasters
+    + function
+        - affords structural support for interaction among waycasters
+        - facilitates the cooperative, competitive or otherwise social formation and declaration of ways
         - aids the evolution of waykinds
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
