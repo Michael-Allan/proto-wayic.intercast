@@ -4,6 +4,14 @@ wayic.intercast/doc.task - Documentation in rough
         ( as used in communications engineering
         - not mathematical terms such as 'graph', 'vertex' and 'edge'
             ( as used in graph theory
+    - catalogue
+        < systems based on intercast relations
+            * intercast network
+            * waycaster network
+            * way population
+        < systems that commonly have intercast form
+            * genetic bit tree
+                ( [IR]
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Commitment stemmaplasty`
@@ -108,17 +116,12 @@ wayic.intercast/doc.task - Documentation in rough
     Intercast link`
     ( ./intercast_link
     - formation
-        * stemmaplasty
-            ( [IR]
+        < [IR]
+            * genetic bitlinks
+            * referential jointing
     - typology
         * intercast link
-            * referential joint
-                ( [IR]
-            * stemmatic bitlink
-                ( [IR]
-                * transport bit trail
-                * recombinant bitlink
-                    ( [IR]
+            * transport bit trail
     - function
         - forms an intercast network
         - forms a waycaster interlink
@@ -126,16 +129,6 @@ wayic.intercast/doc.task - Documentation in rough
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Intercast network`
     ( ./intercast_network
-    - typology
-        ( including the name of the link form < LINK > for each type
-        * intercast network
-            < ⋯ intercast link ⋯ >
-            * way population
-                < referential joint >
-            * bit stemma
-                < stemmatic bitlink >
-            * recombit forest
-                < recombinant bitlink >
     - function
         - forms a waycaster network
 
@@ -148,7 +141,7 @@ wayic.intercast/doc.task - Documentation in rough
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     ?redaction Transport bit trail
-    < surtype: stemmatic bitlink
+    < surtype: intercast link
     - each imported waybit, if on way, is thereby ...
         ( on way, that is, in the importing waycast
     - form
@@ -160,8 +153,6 @@ wayic.intercast/doc.task - Documentation in rough
 
                   . . .
 
-    - function
-        - forms a waycaster network
   —— SALVAGE ——
     + as a genetic link
         - salvaged from removed § Intercast referential joint
@@ -276,7 +267,7 @@ wayic.intercast/doc.task - Documentation in rough
             ( https://www.cl.cam.ac.uk/~mgk25/iso-14977.pdf
             ( summary, https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form
 
-   [IR] · Applies only for those instances which are based on an import reference.
+   [IR] · Applies only for those instances which are formed using an import reference.
 
    [QP] · Query parameter: an ampersand delimited name-value tuple in the query component
           of a URI reference, as defined for content type *application/x-www-form-urlencoded*.
