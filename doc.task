@@ -20,7 +20,7 @@ wayic.intercast/doc.task - Documentation in rough
     - purpose
         - to declare an intent to act on a way part as formalized by an extracast waybit
     - method
-        - write a commitment jointer into a stemmaplastic clone
+        - write a commitment jointer into a deep stemmaplastic clone
     - rationale
         - one cannot, of course, write a commitment jointer into another's waycast
             - hence this method
@@ -80,7 +80,7 @@ wayic.intercast/doc.task - Documentation in rough
         - optional, it may be omitted
             ( as in the example above
             - for sake of clarity and convenience
-                ( e.g. to reduce boilerplate clutter in wayscript
+                ( e.g. to reduce boilerplate clutter in waysource
         - if omitted, then it is implied
             - runtime processors such as wayic.read will introduce it
         - its purpose is to fix the effective location of the imported document
@@ -210,7 +210,7 @@ wayic.intercast/doc.task - Documentation in rough
             - a *waycast name* from a valid *declaration* of waycast_names
     + waycast_names
         * purpose
-            - in wayscript
+            - in waysource
                 - concision for clarity
                 - symbolic indirection for consistency and ease of maintenance
         * place
