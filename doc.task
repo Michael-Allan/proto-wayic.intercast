@@ -13,6 +13,16 @@ wayic.intercast/doc.task - Documentation in rough
             * genetic bit tree
                 ( [IR]
 
+    Intercast network`
+    - the intercast network
+        ( ./intercast_network
+    - a principal component of the architecture
+        ( http://reluk.ca/project/wayic/architec/doc.task § Architecture
+    - function
+        - forms architectonic member X (Extending in society)
+            ( http://reluk.ca/project/wayic/architec/doc.task § Architectonic
+        - forms a waycaster network
+
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Commitment stemmaplasty`
     - stemmaplasty for the purpose of commitment declaration
@@ -126,11 +136,7 @@ wayic.intercast/doc.task - Documentation in rough
         - forms an intercast network
         - forms a waycaster interlink
 
-    ────────────────────────────────────────────────────────────────────────────────────────────────────
-    Intercast network`
-    ( ./intercast_network
-    - function
-        - forms a waycaster network
+  / Intercast network ─────────────────────────────────────────────────────────────────── see at top ───
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     ?redaction Referential transport
