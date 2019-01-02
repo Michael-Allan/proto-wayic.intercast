@@ -14,14 +14,23 @@ wayic.intercast/doc.task - Documentation in rough
                 ( [IR]
 
     Intercast network`
-    - the intercast network
-        ( ./intercast_network
-    - a principal component of the architecture
+    ( ./intercast_network
+    - intercast networks are a principal component of the architecture
         ( http://reluk.ca/project/wayic/architec/doc.task § Architecture
-    - function
-        - forms architectonic member X (Extending in society)
+    + function
+        - each intercast network forms a waycaster network
+        - intercast networks together directly form architectonic member X (Extending in society)
             ( http://reluk.ca/project/wayic/architec/doc.task § Architectonic
-        - forms a waycaster network
+
+    Waycaster network`
+    ( ./waycaster_network
+    + form
+        - intercast network + waycasters
+    + function
+        - waycaster networks afford structural support for interaction among waycasters
+        - they facilitate the cooperative, competitive or otherwise social
+          formation and declaration of ways
+        - they aid the evolution of waykinds
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Commitment stemmaplasty`
@@ -187,15 +196,7 @@ wayic.intercast/doc.task - Documentation in rough
     + function
         - forms a waycaster network
 
-    ────────────────────────────────────────────────────────────────────────────────────────────────────
-    Waycaster network`
-    ( ./waycaster_network
-    + form
-        - intercast network + waycasters
-    + function
-        - affords structural support for interaction among waycasters
-        - facilitates the cooperative, competitive or otherwise social formation and declaration of ways
-        - aids the evolution of waykinds
+  / Waycaster network ─────────────────────────────────────────────────────────────────── see at top ───
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     ?redaction Waycast referencing
@@ -283,4 +284,4 @@ wayic.intercast/doc.task - Documentation in rough
 
 
 
-                                          Copyright © 2018 Michael Allan and contributors.  Licence MIT.
+                                     Copyright © 2018-2019 Michael Allan and contributors.  Licence MIT.
