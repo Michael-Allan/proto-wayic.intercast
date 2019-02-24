@@ -17,6 +17,8 @@ wayic.intercast/doc.task - Documentation in rough
     ( ./intercast_network
     - intercast networks are a principal component of the architecture
         ( http://reluk.ca/project/wayic/architec/doc.task § Architecture
+    + form
+        - waycasts + intercast links
     + function
         - forms a waycaster network
             - each intercast network contributes to the formation of a waycaster network
