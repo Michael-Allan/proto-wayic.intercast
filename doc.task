@@ -38,18 +38,6 @@ wayic.intercast/doc.task - Documentation in rough
         - they aid the evolution of waykinds
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
-    Commitment stemmaplasty`
-    - stemmaplasty for the purpose of commitment declaration
-        ( http://reluk.ca/project/wayic/exec/ § commitment declaration
-    - purpose
-        - to declare an intent to act on a way part as formalized by an extracast waybit
-    - method
-        - write a commitment jointer into a deep stemmaplastic clone
-    - rationale
-        - one cannot, of course, write a commitment jointer into another's waycast
-            - hence this method
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────────
     Design constraints`
     [ ⤓ minimal
         - the necessary form of an intercast network
@@ -220,49 +208,51 @@ wayic.intercast/doc.task - Documentation in rough
                     ( http://reluk.ca/project/wayic/cast/doc.task
         * waycast name
             - a *waycast name* from a valid *declaration* of waycast_names
-    + waycast_names
+    + `waycast_names` configuration property
         * purpose
-            - in waysource
+            - binds waycast names to locations
+                ( see § reference typology §§ waycast name, waycast location
+            - gives to waysource
                 - concision for clarity
                 - symbolic indirection for consistency and ease of maintenance
-        * place
-            - waycast.json
-                ( http://reluk.ca/project/wayic/cast/doc.task § Configuration of a waycast
-        * form
-            ( [EBN], exclusive of whitespacing variations allowed by JSON
+        * declaration
+            - at most one per waycast
+            * place
+                - `waycast.json` -
+                    ( http://reluk.ca/project/wayic/cast/doc.task § configuration of a waycast
+            * form
+                ( [EBN], exclusive of whitespacing variations allowed by JSON
 
-              'waycast_names: {', [ declaration list ], '}' ;
+                  '"waycast_names": {', [ declaration list ], '}' ;
 
-                  declaration list = declaration | declaration, ',', declaration list ;
+                      declaration list = declaration | declaration, ',', declaration list ;
 
-                  declaration = waycast name, ': "', waycast location | waycast name, '"' ;
+                      declaration =
+                        '"', waycast name, '"', ': "', waycast location | waycast name, '"' ;
 
-                  waycast name = ? string of one or more US-ASCII characters,
-                    each a letter or underscore ?;
+                      waycast name = ? string of one or more US-ASCII characters,
+                        each a letter or underscore ?;
 
-                  waycast location = ? as per § reference typology § waycast location ?;
-
+                      waycast location = ? as per § reference typology § waycast location ?;
         * examples
 
                   waycast_names: {
-                      foo: "http://foo.net/waycast/",
-                      bar: "http://bar.com/cast/",
-                      zog: "http://zog.org/waycast/",
-                      end: "foo",
-                      means: "bar" }
+                      "foo": "http://foo.net/waycast/",
+                      "bar": "http://bar.com/cast/",
+                      "zog": "http://zog.org/waycast/",
+                      "end": "foo",
+                      "means": "bar" }
 
             - or, equivalently:
 
                   waycast_names: {
-                      foo: "http://foo.net/waycast/",
-                      bar: "http://bar.com/cast/",
-                      zog: "http://zog.org/waycast/",
-                      end: "http://foo.net/waycast/",
-                      means: "http://bar.com/cast/" }
+                      "foo": "http://foo.net/waycast/",
+                      "bar": "http://bar.com/cast/",
+                      "zog": "http://zog.org/waycast/",
+                      "end": "http://foo.net/waycast/",
+                      "means": "http://bar.com/cast/" }
 
         * function
-            - binds waycast names to locations
-                ( see § reference typology §§ waycast name, waycast location
             - for each *declaration* D
                 - for the *waycast name* N on its left side
                     - N binds (whether directly or indirectly) to a *waycast location*
@@ -282,7 +272,7 @@ wayic.intercast/doc.task - Documentation in rough
    [IR] · Applies only for those instances which are formed using an import reference.
 
    [QP] · Query parameter: an ampersand delimited name-value tuple in the query component
-          of a URI reference, as defined for content type *application/x-www-form-urlencoded*.
+          of a URI reference, as defined for content type `application/x-www-form-urlencoded`.
             ( *application/x-www-form-urlencoded* parsing
                 ( https://url.spec.whatwg.org/#urlencoded-parsing
             ( query, https://tools.ietf.org/html/rfc3986#section-3.4
