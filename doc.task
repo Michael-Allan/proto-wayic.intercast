@@ -217,7 +217,7 @@ wayic.intercast/doc.task - Documentation in rough
                 - symbolic indirection for consistency and ease of maintenance
         * declaration
             - at most one per waycast
-            * place
+            * placement
                 - `waycast.json` -
                     ( http://reluk.ca/project/wayic/cast/doc.task § configuration of a waycast
             * form
