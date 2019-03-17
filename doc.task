@@ -39,13 +39,10 @@ wayic.intercast/doc.task - Documentation in rough
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Design constraints`
-    [ ⤓ minimal
+    + ⤓ minimal
         - the necessary form of an intercast network
-        + waycast publication
-            ( addendum to § Publication of a waycast, http://reluk.ca/project/wayic/cast/doc.task
-            - waycast served to the Web with a response header of "Access-Control-Allow-Origin: *"
-                ( cf. http://reluk.ca/project/wayic/lex/#web_serving
-                - for sake of intercast referential jointing
+        * cross origin requests are enabled
+            < see § Publication of the waycasts
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Import reference`
@@ -104,6 +101,7 @@ wayic.intercast/doc.task - Documentation in rough
     * function
         - summary
             - imports an extracast way declaration document
+                ( [COR]
                 - ensuring its transport is complete or pending
             - refers to it, or to one of its elements
         - detail
@@ -139,6 +137,14 @@ wayic.intercast/doc.task - Documentation in rough
         - forms a waycaster interlink
 
   / Intercast network ─────────────────────────────────────────────────────────────────── see at top ───
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────────
+    Publication of the waycasts`
+    < addendum to http://reluk.ca/project/wayic/cast/doc.task § publication of a waycast
+    * cross origin requests are enabled
+        - each waycast is served to the Web with a response header of "Access-Control-Allow-Origin: *"
+            ( cf. http://reluk.ca/project/wayic/lex/#web_serving
+        - for sake (at least) of intercast referential jointing
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     ?redaction Referential transport
@@ -264,6 +270,9 @@ wayic.intercast/doc.task - Documentation in rough
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 // N o t e s
 /
+   [COR]  Cross origin request.  Depends on the stipulation that “cross origin requests are enabled”.
+            ( § publication of the waycasts
+
    [EBN]  Extended Backus-Naur syntax notation, ISO/IEC 14977.
             ( http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html
             ( https://www.cl.cam.ac.uk/~mgk25/iso-14977.pdf
