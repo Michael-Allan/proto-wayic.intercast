@@ -142,9 +142,14 @@ wayic.intercast/doc.task - Documentation in rough
     Publication of the waycasts`
     < addendum to http://reluk.ca/project/wayic/cast/doc.task § publication of a waycast
     * cross origin requests are enabled
-        - each waycast is served to the Web with a response header of "Access-Control-Allow-Origin: *"
-            ( cf. http://reluk.ca/project/wayic/lex/#web_serving
-        - for sake (at least) of intercast referential jointing
+        - each waycast is served to the Web with a response header of `Access-Control-Allow-Origin: *` -
+        - this header grants to programmatic requesters originating from all network domains (`*`)
+          permission to read the waycast’s content
+            - such requesters include those both of other waycasts published at remote locations
+            - and of copies of any waycast that are stored in a local file system (null domain)
+              and viewed in a browser under a 'file' scheme
+        - working example of a header configuration for Apache `httpd` -
+            < http://reluk.ca/sys/host/server/etc/apache2/7_domain/reluk.ca/public/5_in_project_waycast.conf
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     ?redaction Referential transport
@@ -270,7 +275,7 @@ wayic.intercast/doc.task - Documentation in rough
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 // N o t e s
 /
-   [COR]  Cross origin request.  Depends on the stipulation that “cross origin requests are enabled”.
+   [COR]  Cross origin request.  Depends on the stipulation that "cross origin requests are enabled".
             ( § publication of the waycasts
 
    [EBN]  Extended Backus-Naur syntax notation, ISO/IEC 14977.
