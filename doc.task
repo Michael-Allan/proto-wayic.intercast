@@ -1,10 +1,10 @@
-wayic.intercast/doc.task - Documentation in rough
+wayic/intercast/doc.task - Documentation in rough
 
     - favouring technological terms such as 'network', 'node' and 'link'
         ( as used in communications engineering
         - not mathematical terms such as 'graph', 'vertex' and 'edge'
             ( as used in graph theory
-    - catalogue
+    - catalogue of intercast systems
         < systems based on intercast relations
             * intercast network
             * waycaster network
@@ -36,13 +36,6 @@ wayic.intercast/doc.task - Documentation in rough
         - they facilitate the cooperative, competitive or otherwise social
           formation and declaration of ways
         - they aid the evolution of waykinds
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────────
-    Design constraints`
-    + ⤓ minimal
-        - the necessary form of an intercast network
-        * cross origin requests are enabled
-            < see § Publication of the waycasts
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Import reference`
@@ -137,19 +130,6 @@ wayic.intercast/doc.task - Documentation in rough
         - forms a waycaster interlink
 
   / Intercast network ─────────────────────────────────────────────────────────────────── see at top ───
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────────
-    Publication of the waycasts`
-    < addendum to http://reluk.ca/project/wayic/cast/doc.task § publication of a waycast
-    * cross origin requests are enabled
-        - each waycast is served to the Web with a response header of `Access-Control-Allow-Origin: *` -
-        - this header grants to programmatic requesters originating from all network domains (`*`)
-          permission to read the waycast’s content
-            - such requesters include those both of other waycasts published at remote locations
-            - and of copies of any waycast that are stored in a local file system (null domain)
-              and viewed in a browser under a 'file' scheme
-        - working example of a header configuration for Apache `httpd` -
-            < http://reluk.ca/sys/host/server/etc/apache2/7_domain/reluk.ca/public/5_in_project_waycast.conf
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     ?redaction Referential transport
@@ -275,21 +255,20 @@ wayic.intercast/doc.task - Documentation in rough
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 // N o t e s
 /
-   [COR]  Cross origin request.  Depends on the stipulation that "cross origin requests are enabled".
-            ( § publication of the waycasts
+   [COR]  Each intercast request requires that "cross origin responses are enabled".
+          http://reluk.ca/project/wayic/cast/manual.task § publication of a waycast
 
    [EBN]  Extended Backus-Naur syntax notation, ISO/IEC 14977.
-            ( http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html
-            ( https://www.cl.cam.ac.uk/~mgk25/iso-14977.pdf
-            ( summary, https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form
+          http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html
+          https://www.cl.cam.ac.uk/~mgk25/iso-14977.pdf
+          https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form
 
    [IR] · Applies only for those instances which are formed using an import reference.
 
    [QP] · Query parameter: an ampersand delimited name-value tuple in the query component
           of a URI reference, as defined for content type `application/x-www-form-urlencoded`.
-            ( *application/x-www-form-urlencoded* parsing
-                ( https://url.spec.whatwg.org/#urlencoded-parsing
-            ( query, https://tools.ietf.org/html/rfc3986#section-3.4
+          https://tools.ietf.org/html/rfc3986#section-3.4
+          https://url.spec.whatwg.org/#urlencoded-parsing
 
 
 
