@@ -1,4 +1,4 @@
-wayic/intercast/doc.task - Documentation in rough
+proto-wayic/intercast/doc.task - Documentation in rough
 
     - favouring technological terms such as 'network', 'node' and 'link'
         ( as used in communications engineering
@@ -16,16 +16,16 @@ wayic/intercast/doc.task - Documentation in rough
     Intercast network`
     ( ./intercast_network
     - intercast networks are a principal component of the architecture
-        ( http://reluk.ca/project/wayic/architec/doc.task § Architecture
+        ( http://reluk.ca/project/proto-wayic/architec/doc.task § Architecture
     + form
         - waycasts + intercast links
     + function
         - forms a waycaster network
             - each intercast network contributes to the formation of a waycaster network
         - forms architectonic member X (Extending in society)
-            ( http://reluk.ca/project/wayic/architec/doc.task § Architectonic ⋯§§ X
+            ( http://reluk.ca/project/proto-wayic/architec/doc.task § Architectonic ⋯§§ X
             - together intercast networks form X
-                ( http://reluk.ca/project/wayic/architec/doc.task § Architecture
+                ( http://reluk.ca/project/proto-wayic/architec/doc.task § Architecture
 
     Waycaster network`
     ( ./waycaster_network
@@ -40,7 +40,7 @@ wayic/intercast/doc.task - Documentation in rough
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Import reference`
     < surtype: formally intracast reference
-        ( http://reluk.ca/project/wayic/cast/doc.task
+        ( http://reluk.ca/project/proto-wayic/cast/doc.task
         ( yet functionally both inter and intracast, as per § function
     * form
         ( [EBN]
@@ -84,13 +84,13 @@ wayic/intercast/doc.task - Documentation in rough
             - for sake of clarity and convenience
                 ( e.g. to reduce boilerplate clutter in waysource
         - if omitted, then it is implied
-            - runtime processors such as wayic.read will introduce it
+            - runtime processors such as proto-wayic.read will introduce it
         - its purpose is to fix the effective location of the imported document
             - e.g. as it appears in a browser's address bar
             - for sake of simplicity, clarity and processing efficiency
     * resolution
         - the fragment is resolved as an extended element reference
-            ( http://reluk.ca/project/wayic/script/doc.task
+            ( http://reluk.ca/project/proto-wayic/script/doc.task
     * function
         - summary
             - imports an extracast way declaration document
@@ -110,10 +110,10 @@ wayic/intercast/doc.task - Documentation in rough
                 - the result being the "imported document"
                     ( ./import
             - refers to the imported document, or to one of its elements
-        = task to implement in wayic.emacs
+        = task to implement in proto-wayic.emacs
             - fontifying the *named waycast reference* to distinguish it from the subsequent path
               for sake of clarity
-        = task to implement in wayic.read
+        = task to implement in proto-wayic.read
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Intercast link`
@@ -159,7 +159,7 @@ wayic/intercast/doc.task - Documentation in rough
             ( as a genetic link
             - defines the referent waybit to be the synchronic (infrabutting) child
               that is introduced to the (referring) waycast as an effect of the referential joint
-                ( http://reluk.ca/project/wayic/script/doc.task § Referential jointing § effect
+                ( http://reluk.ca/project/proto-wayic/script/doc.task § Referential jointing § effect
                 = correct to imported image
             - declares the referring waybit to be a member of the population
               of the referent waybit off in the referent waycast
@@ -195,8 +195,8 @@ wayic/intercast/doc.task - Documentation in rough
             * waycast public identifier
                 - a URI in normal form
                     ( Normalization and comparison, https://tools.ietf.org/html/rfc3986#section-6
-                < as per wayic.cast § Publication of a waycast § waycast public identifier
-                    ( http://reluk.ca/project/wayic/cast/doc.task
+                < as per proto-wayic.cast § Publication of a waycast § waycast public identifier
+                    ( http://reluk.ca/project/proto-wayic/cast/doc.task
         * waycast name
             - a *waycast name* from a valid *declaration* of waycast_names
     + `waycast_names` configuration property
@@ -210,7 +210,7 @@ wayic/intercast/doc.task - Documentation in rough
             - at most one per waycast
             * placement
                 - `waycast.json` -
-                    ( http://reluk.ca/project/wayic/cast/doc.task § configuration of a waycast
+                    ( http://reluk.ca/project/proto-wayic/cast/doc.task § configuration of a waycast
             * form
                 ( [EBN], exclusive of whitespacing variations allowed by JSON
 
@@ -256,7 +256,7 @@ wayic/intercast/doc.task - Documentation in rough
 // N o t e s
 /
    [COR]  Each intercast request requires that "cross origin responses are enabled".
-          http://reluk.ca/project/wayic/cast/manual.task § publication of a waycast
+          http://reluk.ca/project/proto-wayic/cast/manual.task § publication of a waycast
 
    [EBN]  Extended Backus-Naur syntax notation, ISO/IEC 14977.
           http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html
